@@ -34,7 +34,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">33.964s</div>
+<div class="counter">2.933s</div>
 <p>duration</p>
 </div>
 </td>
@@ -72,17 +72,17 @@
 </thead>
 <tr>
 <td class="success">strict host key checking with a valid known-hosts</td>
-<td>10.784s</td>
+<td>1.412s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">strict host key checking with an empty known-hosts</td>
-<td>2.711s</td>
+<td>0.582s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">turn off strict host key checking</td>
-<td>20.469s</td>
+<td>0.939s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,228 +90,229 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>03:30:41.297 [pool-70-thread-11] DEBUG o.a.s.server.session.ServerSession - Closing session
-03:30:41.297 [pool-70-thread-11] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
-03:30:41.297 [pool-70-thread-11] DEBUG o.a.s.server.session.ServerSession - IoSession closed
-03:30:41.297 [pool-70-thread-11] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:44142 closed
-03:31:01.477 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Creating Nio2Acceptor
-03:31:01.477 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/127.0.0.1:50439
-03:31:01.478 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/0:0:0:0:0:0:0:1:50439
-03:31:01.507 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-03:31:01.535 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
-03:31:01.535 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
-03:31:01.535 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
+<pre>13:41:54.348 [pool-70-thread-11] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
+13:41:54.348 [pool-70-thread-11] DEBUG o.a.s.server.session.ServerSession - IoSession closed
+13:41:54.348 [pool-70-thread-11] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:41880 closed
+13:41:54.971 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Creating Nio2Acceptor
+13:41:54.972 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/127.0.0.1:60362
+13:41:54.972 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/0:0:0:0:0:0:0:1:60362
+13:41:55.008 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+13:41:55.045 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
+13:41:55.045 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
+13:41:55.046 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-03:31:01.536 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
-03:31:01.537 [Test worker] INFO  o.h.g.ssh.internal.DefaultSshService - Strict host key checking is turned off. Use only for testing purpose.
-03:31:01.538 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Creating Nio2Session on /127.0.0.1:50439 from /127.0.0.1:48802
-03:31:01.539 [pool-72-thread-1] INFO  o.a.s.server.session.ServerSession - Session created from /127.0.0.1:48802
-03:31:01.539 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 25 bytes
-03:31:01.540 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 384 bytes
-03:31:01.540 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 20 bytes
-03:31:01.540 [pool-72-thread-1] DEBUG o.a.s.server.session.ServerSession - Client version string: SSH-2.0-JSCH-0.1.46
-03:31:01.542 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 400 bytes
-03:31:01.542 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXINIT
-03:31:01.542 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_KEXINIT
-03:31:01.548 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 152 bytes
-03:31:01.548 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXDH_INIT
-03:31:01.549 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Received SSH_MSG_KEXDH_INIT
-03:31:01.556 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - K_S:  00 00 00 07 73 73 68 2d 64 73 73 00 00 00 81 00 eb ee d0 69 13 f2 eb 92 08 5f 51 b7 b8 8a cb 0b 6f 7b 5c 2d 36 65 a4 20 f1 0b 65 72 d5 ff 04 e2 f9 29 b9 af 11 79 20 52 27 1b 97 4b 36 8b 9c e6 e1 19 ce 2c e7 2d fc fe 64 7e 05 2f 8e 2c 25 b6 bc 7e 7b 39 35 d2 85 b2 0d 94 61 7c 63 9a 24 8c be ed 73 47 a8 a3 01 f3 ac 3c 89 d5 4d 14 78 10 42 92 69 82 3c 98 d9 9d ae 31 34 69 da 90 a5 e4 05 14 4b 85 e1 cc 0a 97 7e 5f fd c7 13 1c 0e fb 00 00 00 15 00 84 48 9c 6d de 8a d9 37 b0 ce 33 84 48 a1 02 f9 6c 5f 44 7f 00 00 00 80 24 2d e6 bf 05 a6 3a 68 0c f9 d8 ca 3c 7a 5d 48 fc 7e 81 11 45 57 a9 c8 19 e6 b2 74 99 c9 65 f0 e9 67 d5 04 56 11 46 05 52 08 8f b4 d5 1c c0 3c 59 e5 cb 74 46 88 66 f6 1f cb 5b 04 09 64 d6 84 91 34 69 76 33 1d 56 31 fc de 42 1a 2c 47 1f 4a 18 48 f1 ad 99 b7 d1 6d 32 7f 8a da 07 1d b0 65 64 03 0d da 68 5d 89 10 ff 86 09 94 9d d9 94 88 d8 ce 7e 30 33 19 f4 8f a1 34 a8 d5 e1 48 dd 02 00 00 00 80 51 b7 6e 42 a7 81 10 d3 35 f8 f0 12 ca 85 1c a5 67 b2 20 70 18 bb 0a fc c7 35 48 2f 45 f4 09 ef c6 ff ec 21 b5 d2 96 27 3e 34 6c e0 ea 8c d1 89 1c 72 49 46 ac e5 da 7c 5c 13 6b e8 8a f0 fb 01 53 fe 08 03 2e 17 9c 9e 57 4a d1 3b 16 b1 84 7d 58 65 c8 ea fe 6e 2e 82 a6 35 e4 de 8a 6a 26 3b 7e e4 89 97 48 4e be 6d 9f 09 32 df 3a 07 ad ba 35 af b0 6d ae d0 a9 4e 8d 47 fe af 89 1c 57 47
-03:31:01.556 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - f:    00 e0 e2 e9 90 3f c3 5f 09 8c 60 62 bc 7e 40 3c 74 81 45 d2 3e 8f 15 62 a0 4f 7b 6b a7 f3 94 c4 c1 32 4a 08 6c 2b 85 0d 6f 88 9a 76 a2 f5 3f 8d 7b c0 f2 24 91 08 2f a8 4e 1a db 73 00 dc de b4 93 2d 4a 04 5f ec 57 25 68 80 42 fb bb 40 53 ed 32 23 64 1c 46 45 8b e3 77 50 33 d7 a0 20 02 2a d6 d2 6d 6d 83 66 11 66 58 9e 10 cb 04 9f 6b fd c4 a8 be c4 05 88 c6 27 e7 94 80 c0 8e 49 74 ff 94
-03:31:01.556 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - sigH: 00 00 00 07 73 73 68 2d 64 73 73 00 00 00 28 10 66 83 f7 fc 37 71 82 2c 3d 55 b6 35 66 e2 5d 3b 00 b4 4e 69 66 85 4d 83 5f b6 a5 c9 98 77 8b 20 c1 51 23 e5 86 d8 63
-03:31:01.556 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Send SSH_MSG_KEXDH_REPLY
-03:31:01.557 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 648 bytes
-03:31:01.557 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Send SSH_MSG_NEWKEYS
-03:31:01.557 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 16 bytes
-03:31:01.563 [pool-72-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 16 bytes
-03:31:01.563 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_NEWKEYS
-03:31:01.563 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_NEWKEYS
-03:31:01.564 [pool-72-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
-03:31:01.564 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_SERVICE_REQUEST
-03:31:01.564 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_SERVICE_REQUEST 'ssh-userauth'
-03:31:01.564 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Accepting user authentication request
-03:31:01.565 [pool-72-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
-03:31:01.565 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Authorized authentication methods: password,keyboard-interactive
-03:31:01.566 [pool-72-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
-03:31:01.566 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
-03:31:01.566 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
-03:31:01.566 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'none'
-03:31:01.566 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Authentication failed
-03:31:01.566 [pool-72-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 80 bytes
-03:31:01.568 [pool-72-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 112 bytes
-03:31:01.568 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
-03:31:01.568 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
-03:31:01.568 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'keyboard-interactive'
-03:31:01.568 [pool-72-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 112 bytes
-03:31:01.568 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Authentication not finished
-03:31:01.569 [pool-72-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
-03:31:01.569 [pool-72-thread-6] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_INFO_RESPONSE
-03:31:01.570 [pool-72-thread-6] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_INFO_RESPONSE
-03:31:01.571 [pool-72-thread-6] DEBUG o.a.s.server.session.ServerSession - Authentication succeeded
-03:31:01.571 [pool-72-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
-03:31:01.571 [pool-72-thread-6] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:48802 authenticated
-03:31:01.572 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Executing command: somecommand
-03:31:01.573 [pool-72-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
-03:31:01.573 [pool-72-thread-7] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_OPEN
-03:31:01.574 [pool-72-thread-7] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_CHANNEL_OPEN session
-03:31:01.574 [pool-72-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
-03:31:01.575 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #36 has been opened
-03:31:01.575 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
-03:31:01.575 [pool-72-thread-8] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_REQUEST
-03:31:01.576 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_REQUEST on channel 137
-03:31:01.576 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received channel request: exec
-03:31:01.576 [pool-72-thread-8] INFO  o.a.s.server.channel.ChannelSession - Executing command: somecommand
-03:31:01.576 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_EOF on channel 137
-03:31:01.576 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
-03:31:01.577 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_REQUEST exit-status on channel 137
-03:31:01.577 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
-03:31:01.577 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Closing channel 137 gracefully
-03:31:01.577 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Wait 5s for shell to exit cleanly
-03:31:01.577 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_CLOSE on channel 137
-03:31:01.577 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
-03:31:01.617 [pool-72-thread-9] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 48 bytes
-03:31:01.617 [pool-72-thread-9] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_CLOSE
-03:31:01.617 [pool-72-thread-9] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_CLOSE on channel 137
-03:31:01.775 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #36 has been closed with exit status 0
-03:31:01.776 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
-03:31:01.777 [pool-72-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Socket has been disconnected, closing IoSession now
-03:31:01.777 [pool-72-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
-03:31:01.777 [pool-72-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
-03:31:01.777 [pool-72-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing session
-03:31:01.777 [pool-72-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
-03:31:01.777 [pool-72-thread-10] DEBUG o.a.s.server.session.ServerSession - IoSession closed
-03:31:01.777 [pool-72-thread-10] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:48802 closed
-03:31:12.258 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Creating Nio2Acceptor
-03:31:12.258 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/127.0.0.1:50406
-03:31:12.259 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/0:0:0:0:0:0:0:1:50406
-03:31:12.286 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-03:31:12.314 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
-03:31:12.314 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
-03:31:12.315 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
+13:41:55.046 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
+13:41:55.048 [Test worker] INFO  o.h.g.ssh.internal.DefaultSshService - Strict host key checking is turned off. Use only for testing purpose.
+13:41:55.049 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Creating Nio2Session on /127.0.0.1:60362 from /127.0.0.1:52979
+13:41:55.050 [pool-72-thread-1] INFO  o.a.s.server.session.ServerSession - Session created from /127.0.0.1:52979
+13:41:55.050 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 25 bytes
+13:41:55.051 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 384 bytes
+13:41:55.052 [pool-72-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 20 bytes
+13:41:55.052 [pool-72-thread-1] DEBUG o.a.s.server.session.ServerSession - Client version string: SSH-2.0-JSCH-0.1.46
+13:41:55.053 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 400 bytes
+13:41:55.054 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXINIT
+13:41:55.054 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_KEXINIT
+13:41:55.063 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 152 bytes
+13:41:55.063 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXDH_INIT
+13:41:55.063 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Received SSH_MSG_KEXDH_INIT
+13:41:55.074 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - K_S:  00 00 00 07 73 73 68 2d 64 73 73 00 00 00 81 00 eb ee d0 69 13 f2 eb 92 08 5f 51 b7 b8 8a cb 0b 6f 7b 5c 2d 36 65 a4 20 f1 0b 65 72 d5 ff 04 e2 f9 29 b9 af 11 79 20 52 27 1b 97 4b 36 8b 9c e6 e1 19 ce 2c e7 2d fc fe 64 7e 05 2f 8e 2c 25 b6 bc 7e 7b 39 35 d2 85 b2 0d 94 61 7c 63 9a 24 8c be ed 73 47 a8 a3 01 f3 ac 3c 89 d5 4d 14 78 10 42 92 69 82 3c 98 d9 9d ae 31 34 69 da 90 a5 e4 05 14 4b 85 e1 cc 0a 97 7e 5f fd c7 13 1c 0e fb 00 00 00 15 00 84 48 9c 6d de 8a d9 37 b0 ce 33 84 48 a1 02 f9 6c 5f 44 7f 00 00 00 80 24 2d e6 bf 05 a6 3a 68 0c f9 d8 ca 3c 7a 5d 48 fc 7e 81 11 45 57 a9 c8 19 e6 b2 74 99 c9 65 f0 e9 67 d5 04 56 11 46 05 52 08 8f b4 d5 1c c0 3c 59 e5 cb 74 46 88 66 f6 1f cb 5b 04 09 64 d6 84 91 34 69 76 33 1d 56 31 fc de 42 1a 2c 47 1f 4a 18 48 f1 ad 99 b7 d1 6d 32 7f 8a da 07 1d b0 65 64 03 0d da 68 5d 89 10 ff 86 09 94 9d d9 94 88 d8 ce 7e 30 33 19 f4 8f a1 34 a8 d5 e1 48 dd 02 00 00 00 80 51 b7 6e 42 a7 81 10 d3 35 f8 f0 12 ca 85 1c a5 67 b2 20 70 18 bb 0a fc c7 35 48 2f 45 f4 09 ef c6 ff ec 21 b5 d2 96 27 3e 34 6c e0 ea 8c d1 89 1c 72 49 46 ac e5 da 7c 5c 13 6b e8 8a f0 fb 01 53 fe 08 03 2e 17 9c 9e 57 4a d1 3b 16 b1 84 7d 58 65 c8 ea fe 6e 2e 82 a6 35 e4 de 8a 6a 26 3b 7e e4 89 97 48 4e be 6d 9f 09 32 df 3a 07 ad ba 35 af b0 6d ae d0 a9 4e 8d 47 fe af 89 1c 57 47
+13:41:55.074 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - f:    00 8b 1a b7 52 6b c7 a8 f1 05 e3 58 09 1e 91 6c 57 1a e3 c9 84 73 21 c6 a2 05 2f ee d0 d0 c4 23 db b2 52 77 8a 9a 7c 7f c1 9f 84 de 90 35 dc d8 07 b2 61 b8 b0 00 1d ae e9 e9 b2 43 9a 49 d7 7b 99 f9 50 c2 b3 64 26 a0 87 4a 59 35 cc 4e a3 cf e5 b8 5b 03 89 35 cc fe c0 6b 30 72 ff 7a 2b 0d c6 4b ab ab 40 9d f7 2c fd aa 3f c9 84 fd 14 59 3d 77 f2 8b 2c 9e f2 10 6b cd 03 e9 d2 85 5d 48 0a
+13:41:55.074 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - sigH: 00 00 00 07 73 73 68 2d 64 73 73 00 00 00 28 26 bd e2 8c 82 8c 0e 59 5a b3 37 bc 3b 08 85 a8 eb 8a d9 80 1d 8f df ac b2 14 69 35 0c 99 59 e1 45 e3 b0 f3 1b 38 24 6e
+13:41:55.075 [pool-72-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Send SSH_MSG_KEXDH_REPLY
+13:41:55.075 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 648 bytes
+13:41:55.075 [pool-72-thread-2] DEBUG o.a.s.server.session.ServerSession - Send SSH_MSG_NEWKEYS
+13:41:55.075 [pool-72-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 16 bytes
+13:41:55.083 [pool-72-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 16 bytes
+13:41:55.084 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_NEWKEYS
+13:41:55.084 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_NEWKEYS
+13:41:55.085 [pool-72-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
+13:41:55.085 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_SERVICE_REQUEST
+13:41:55.086 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_SERVICE_REQUEST 'ssh-userauth'
+13:41:55.086 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Accepting user authentication request
+13:41:55.086 [pool-72-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
+13:41:55.086 [pool-72-thread-3] DEBUG o.a.s.server.session.ServerSession - Authorized authentication methods: password,keyboard-interactive
+13:41:55.087 [pool-72-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
+13:41:55.087 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
+13:41:55.088 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
+13:41:55.088 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'none'
+13:41:55.088 [pool-72-thread-4] DEBUG o.a.s.server.session.ServerSession - Authentication failed
+13:41:55.088 [pool-72-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 80 bytes
+13:41:55.089 [pool-72-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 112 bytes
+13:41:55.089 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
+13:41:55.090 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
+13:41:55.090 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'keyboard-interactive'
+13:41:55.090 [pool-72-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 112 bytes
+13:41:55.090 [pool-72-thread-5] DEBUG o.a.s.server.session.ServerSession - Authentication not finished
+13:41:55.091 [pool-72-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
+13:41:55.091 [pool-72-thread-6] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_INFO_RESPONSE
+13:41:55.091 [pool-72-thread-6] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_INFO_RESPONSE
+13:41:55.092 [pool-72-thread-6] DEBUG o.a.s.server.session.ServerSession - Authentication succeeded
+13:41:55.093 [pool-72-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
+13:41:55.093 [pool-72-thread-6] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:52979 authenticated
+13:41:55.094 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Executing command: somecommand
+13:41:55.095 [pool-72-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
+13:41:55.096 [pool-72-thread-7] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_OPEN
+13:41:55.096 [pool-72-thread-7] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_CHANNEL_OPEN session
+13:41:55.096 [pool-72-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
+13:41:55.097 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #36 has been opened
+13:41:55.098 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
+13:41:55.098 [pool-72-thread-8] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_REQUEST
+13:41:55.098 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_REQUEST on channel 137
+13:41:55.098 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received channel request: exec
+13:41:55.098 [pool-72-thread-8] INFO  o.a.s.server.channel.ChannelSession - Executing command: somecommand
+13:41:55.099 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_EOF on channel 137
+13:41:55.099 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
+13:41:55.100 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_REQUEST exit-status on channel 137
+13:41:55.100 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
+13:41:55.100 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Closing channel 137 gracefully
+13:41:55.100 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Wait 5s for shell to exit cleanly
+13:41:55.101 [pool-72-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_CLOSE on channel 137
+13:41:55.105 [pool-72-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
+13:41:55.141 [pool-72-thread-9] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 48 bytes
+13:41:55.142 [pool-72-thread-9] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_CLOSE
+13:41:55.142 [pool-72-thread-9] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_CLOSE on channel 137
+13:41:55.298 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #36 has been closed with exit status 0
+13:41:55.299 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
+13:41:55.300 [pool-72-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Socket has been disconnected, closing IoSession now
+13:41:55.300 [pool-72-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
+13:41:55.300 [pool-72-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
+13:41:55.301 [pool-72-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing session
+13:41:55.301 [pool-72-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
+13:41:55.301 [pool-72-thread-10] DEBUG o.a.s.server.session.ServerSession - IoSession closed
+13:41:55.301 [pool-72-thread-10] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:52979 closed
+13:41:56.388 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Creating Nio2Acceptor
+13:41:56.388 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/127.0.0.1:45876
+13:41:56.389 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/0:0:0:0:0:0:0:1:45876
+13:41:56.423 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+13:41:56.455 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
+13:41:56.455 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
+13:41:56.456 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.001 secs) due to:
   Task has not declared any outputs.
-03:31:12.315 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
-03:31:12.319 [Test worker] DEBUG o.h.g.ssh.internal.DefaultSshService - Using known-hosts file: /tmp/junit8274020530078744044/junit4198132353280815640.tmp
-03:31:12.321 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Creating Nio2Session on /127.0.0.1:50406 from /127.0.0.1:60041
-03:31:12.321 [pool-74-thread-1] INFO  o.a.s.server.session.ServerSession - Session created from /127.0.0.1:60041
-03:31:12.321 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 25 bytes
-03:31:12.322 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 384 bytes
-03:31:12.322 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 20 bytes
-03:31:12.322 [pool-74-thread-1] DEBUG o.a.s.server.session.ServerSession - Client version string: SSH-2.0-JSCH-0.1.46
-03:31:12.325 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 400 bytes
-03:31:12.325 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXINIT
-03:31:12.325 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_KEXINIT
-03:31:12.331 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 152 bytes
-03:31:12.331 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXDH_INIT
-03:31:12.331 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Received SSH_MSG_KEXDH_INIT
-03:31:12.339 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - K_S:  00 00 00 07 73 73 68 2d 64 73 73 00 00 00 81 00 eb ee d0 69 13 f2 eb 92 08 5f 51 b7 b8 8a cb 0b 6f 7b 5c 2d 36 65 a4 20 f1 0b 65 72 d5 ff 04 e2 f9 29 b9 af 11 79 20 52 27 1b 97 4b 36 8b 9c e6 e1 19 ce 2c e7 2d fc fe 64 7e 05 2f 8e 2c 25 b6 bc 7e 7b 39 35 d2 85 b2 0d 94 61 7c 63 9a 24 8c be ed 73 47 a8 a3 01 f3 ac 3c 89 d5 4d 14 78 10 42 92 69 82 3c 98 d9 9d ae 31 34 69 da 90 a5 e4 05 14 4b 85 e1 cc 0a 97 7e 5f fd c7 13 1c 0e fb 00 00 00 15 00 84 48 9c 6d de 8a d9 37 b0 ce 33 84 48 a1 02 f9 6c 5f 44 7f 00 00 00 80 24 2d e6 bf 05 a6 3a 68 0c f9 d8 ca 3c 7a 5d 48 fc 7e 81 11 45 57 a9 c8 19 e6 b2 74 99 c9 65 f0 e9 67 d5 04 56 11 46 05 52 08 8f b4 d5 1c c0 3c 59 e5 cb 74 46 88 66 f6 1f cb 5b 04 09 64 d6 84 91 34 69 76 33 1d 56 31 fc de 42 1a 2c 47 1f 4a 18 48 f1 ad 99 b7 d1 6d 32 7f 8a da 07 1d b0 65 64 03 0d da 68 5d 89 10 ff 86 09 94 9d d9 94 88 d8 ce 7e 30 33 19 f4 8f a1 34 a8 d5 e1 48 dd 02 00 00 00 80 51 b7 6e 42 a7 81 10 d3 35 f8 f0 12 ca 85 1c a5 67 b2 20 70 18 bb 0a fc c7 35 48 2f 45 f4 09 ef c6 ff ec 21 b5 d2 96 27 3e 34 6c e0 ea 8c d1 89 1c 72 49 46 ac e5 da 7c 5c 13 6b e8 8a f0 fb 01 53 fe 08 03 2e 17 9c 9e 57 4a d1 3b 16 b1 84 7d 58 65 c8 ea fe 6e 2e 82 a6 35 e4 de 8a 6a 26 3b 7e e4 89 97 48 4e be 6d 9f 09 32 df 3a 07 ad ba 35 af b0 6d ae d0 a9 4e 8d 47 fe af 89 1c 57 47
-03:31:12.339 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - f:    6b 57 f4 92 a7 e6 b7 d0 82 7c 70 62 9a 8b d9 79 e3 5b 99 77 72 36 27 3c 00 65 a6 24 14 34 8b 4d 61 a9 44 dc 8c 22 ec 30 25 b5 ec 16 94 89 53 cc f9 76 2d ed 31 84 fe 26 77 85 42 ea cd 73 2d f6 1b a7 2a 58 e9 7f 66 67 a1 52 33 20 ab 06 92 4b fe 34 f3 47 0f 04 df bd 90 a8 32 77 4e d2 59 48 e9 c3 79 27 8e 7a aa c7 5c 45 da 20 00 e4 fd f8 a2 75 e3 7c 62 4a bf 4d 68 0e 77 ba 15 3d ed 83
-03:31:12.339 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - sigH: 00 00 00 07 73 73 68 2d 64 73 73 00 00 00 28 36 db 39 dc 2d b1 9b 89 90 fc c1 91 29 8d 9a 70 97 42 2e 44 64 5a 8f e6 6c 72 7b 88 23 06 34 40 bc cd bf 94 ef 7e 91 cb
-03:31:12.339 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Send SSH_MSG_KEXDH_REPLY
-03:31:12.339 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 648 bytes
-03:31:12.339 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Send SSH_MSG_NEWKEYS
-03:31:12.340 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 16 bytes
-03:31:12.346 [pool-74-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 16 bytes
-03:31:12.346 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_NEWKEYS
-03:31:12.346 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_NEWKEYS
-03:31:12.347 [pool-74-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
-03:31:12.348 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_SERVICE_REQUEST
-03:31:12.348 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_SERVICE_REQUEST 'ssh-userauth'
-03:31:12.348 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Accepting user authentication request
-03:31:12.348 [pool-74-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
-03:31:12.348 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Authorized authentication methods: password,keyboard-interactive
-03:31:12.349 [pool-74-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
-03:31:12.349 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
-03:31:12.349 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
-03:31:12.349 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'none'
-03:31:12.350 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Authentication failed
-03:31:12.350 [pool-74-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 80 bytes
-03:31:12.351 [pool-74-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 112 bytes
-03:31:12.351 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
-03:31:12.351 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
-03:31:12.351 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'keyboard-interactive'
-03:31:12.352 [pool-74-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 112 bytes
-03:31:12.352 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Authentication not finished
-03:31:12.352 [pool-74-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
-03:31:12.353 [pool-74-thread-6] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_INFO_RESPONSE
-03:31:12.353 [pool-74-thread-6] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_INFO_RESPONSE
-03:31:12.354 [pool-74-thread-6] DEBUG o.a.s.server.session.ServerSession - Authentication succeeded
-03:31:12.354 [pool-74-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
-03:31:12.354 [pool-74-thread-6] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:60041 authenticated
-03:31:12.355 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Executing command: somecommand
-03:31:12.356 [pool-74-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
-03:31:12.357 [pool-74-thread-7] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_OPEN
-03:31:12.357 [pool-74-thread-7] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_CHANNEL_OPEN session
-03:31:12.357 [pool-74-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
-03:31:12.358 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #37 has been opened
-03:31:12.358 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
-03:31:12.359 [pool-74-thread-8] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_REQUEST
-03:31:12.359 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_REQUEST on channel 138
-03:31:12.359 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received channel request: exec
-03:31:12.359 [pool-74-thread-8] INFO  o.a.s.server.channel.ChannelSession - Executing command: somecommand
-03:31:12.359 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_EOF on channel 138
-03:31:12.360 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
-03:31:12.360 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_REQUEST exit-status on channel 138
-03:31:12.360 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
-03:31:12.360 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Closing channel 138 gracefully
-03:31:12.360 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Wait 5s for shell to exit cleanly
-03:31:12.360 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_CLOSE on channel 138
-03:31:12.361 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
-03:31:12.401 [pool-74-thread-9] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 48 bytes
-03:31:12.402 [pool-74-thread-9] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_CLOSE
-03:31:12.402 [pool-74-thread-9] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_CLOSE on channel 138
-03:31:12.559 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #37 has been closed with exit status 0
-03:31:12.560 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
-03:31:12.560 [pool-74-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Socket has been disconnected, closing IoSession now
-03:31:12.561 [pool-74-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
-03:31:12.561 [pool-74-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
-03:31:12.561 [pool-74-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing session
-03:31:12.561 [pool-74-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
-03:31:12.561 [pool-74-thread-10] DEBUG o.a.s.server.session.ServerSession - IoSession closed
-03:31:12.562 [pool-74-thread-10] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:60041 closed
-03:31:15.194 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Creating Nio2Acceptor
-03:31:15.194 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/127.0.0.1:49749
-03:31:15.195 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/0:0:0:0:0:0:0:1:49749
-03:31:15.222 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-03:31:15.242 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
-03:31:15.242 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
-03:31:15.243 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
+13:41:56.456 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
+13:41:56.461 [Test worker] DEBUG o.h.g.ssh.internal.DefaultSshService - Using known-hosts file: /tmp/junit8820281654402728812/junit9163104634973244446.tmp
+13:41:56.462 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Creating Nio2Session on /127.0.0.1:45876 from /127.0.0.1:36379
+13:41:56.463 [pool-74-thread-1] INFO  o.a.s.server.session.ServerSession - Session created from /127.0.0.1:36379
+13:41:56.463 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 25 bytes
+13:41:56.464 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 384 bytes
+13:41:56.464 [pool-74-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 20 bytes
+13:41:56.465 [pool-74-thread-1] DEBUG o.a.s.server.session.ServerSession - Client version string: SSH-2.0-JSCH-0.1.46
+13:41:56.466 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 400 bytes
+13:41:56.467 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXINIT
+13:41:56.467 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_KEXINIT
+13:41:56.476 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 152 bytes
+13:41:56.476 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXDH_INIT
+13:41:56.476 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Received SSH_MSG_KEXDH_INIT
+13:41:56.487 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - K_S:  00 00 00 07 73 73 68 2d 64 73 73 00 00 00 81 00 eb ee d0 69 13 f2 eb 92 08 5f 51 b7 b8 8a cb 0b 6f 7b 5c 2d 36 65 a4 20 f1 0b 65 72 d5 ff 04 e2 f9 29 b9 af 11 79 20 52 27 1b 97 4b 36 8b 9c e6 e1 19 ce 2c e7 2d fc fe 64 7e 05 2f 8e 2c 25 b6 bc 7e 7b 39 35 d2 85 b2 0d 94 61 7c 63 9a 24 8c be ed 73 47 a8 a3 01 f3 ac 3c 89 d5 4d 14 78 10 42 92 69 82 3c 98 d9 9d ae 31 34 69 da 90 a5 e4 05 14 4b 85 e1 cc 0a 97 7e 5f fd c7 13 1c 0e fb 00 00 00 15 00 84 48 9c 6d de 8a d9 37 b0 ce 33 84 48 a1 02 f9 6c 5f 44 7f 00 00 00 80 24 2d e6 bf 05 a6 3a 68 0c f9 d8 ca 3c 7a 5d 48 fc 7e 81 11 45 57 a9 c8 19 e6 b2 74 99 c9 65 f0 e9 67 d5 04 56 11 46 05 52 08 8f b4 d5 1c c0 3c 59 e5 cb 74 46 88 66 f6 1f cb 5b 04 09 64 d6 84 91 34 69 76 33 1d 56 31 fc de 42 1a 2c 47 1f 4a 18 48 f1 ad 99 b7 d1 6d 32 7f 8a da 07 1d b0 65 64 03 0d da 68 5d 89 10 ff 86 09 94 9d d9 94 88 d8 ce 7e 30 33 19 f4 8f a1 34 a8 d5 e1 48 dd 02 00 00 00 80 51 b7 6e 42 a7 81 10 d3 35 f8 f0 12 ca 85 1c a5 67 b2 20 70 18 bb 0a fc c7 35 48 2f 45 f4 09 ef c6 ff ec 21 b5 d2 96 27 3e 34 6c e0 ea 8c d1 89 1c 72 49 46 ac e5 da 7c 5c 13 6b e8 8a f0 fb 01 53 fe 08 03 2e 17 9c 9e 57 4a d1 3b 16 b1 84 7d 58 65 c8 ea fe 6e 2e 82 a6 35 e4 de 8a 6a 26 3b 7e e4 89 97 48 4e be 6d 9f 09 32 df 3a 07 ad ba 35 af b0 6d ae d0 a9 4e 8d 47 fe af 89 1c 57 47
+13:41:56.488 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - f:    2c 2e 1d 61 f2 dd 51 61 1e 25 c5 0b 93 16 22 28 c9 08 65 c8 a4 71 75 28 b0 b5 03 30 5f ad 9f d5 19 a4 19 ae 94 74 78 be de 6c 68 a6 ac 29 42 47 99 35 9a e1 b0 2b 38 ff ea 2e a4 35 f5 cf 4c 68 8f 9f ae 39 61 49 b0 21 96 b4 3c 02 b6 41 ec ae f8 6c 9b eb 0a db f9 a2 43 d8 09 63 87 35 42 b2 3b 66 7e 36 d3 d1 3e 7b 92 62 d5 76 f8 38 c2 9b 68 d9 34 62 6c 94 2f 40 aa 68 e6 24 ad 70 db 99
+13:41:56.488 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - sigH: 00 00 00 07 73 73 68 2d 64 73 73 00 00 00 28 45 3a 04 72 66 af fa 61 f0 40 0d a0 cf 14 95 a5 64 aa ff d6 04 23 81 a9 7d 7d 65 b7 5e f2 3e 27 86 43 0a e9 32 b7 31 e3
+13:41:56.488 [pool-74-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Send SSH_MSG_KEXDH_REPLY
+13:41:56.488 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 648 bytes
+13:41:56.488 [pool-74-thread-2] DEBUG o.a.s.server.session.ServerSession - Send SSH_MSG_NEWKEYS
+13:41:56.489 [pool-74-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 16 bytes
+13:41:56.496 [pool-74-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 16 bytes
+13:41:56.496 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_NEWKEYS
+13:41:56.496 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_NEWKEYS
+13:41:56.497 [pool-74-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
+13:41:56.498 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_SERVICE_REQUEST
+13:41:56.498 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_SERVICE_REQUEST 'ssh-userauth'
+13:41:56.498 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Accepting user authentication request
+13:41:56.498 [pool-74-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
+13:41:56.498 [pool-74-thread-3] DEBUG o.a.s.server.session.ServerSession - Authorized authentication methods: password,keyboard-interactive
+13:41:56.499 [pool-74-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
+13:41:56.499 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
+13:41:56.499 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
+13:41:56.500 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'none'
+13:41:56.500 [pool-74-thread-4] DEBUG o.a.s.server.session.ServerSession - Authentication failed
+13:41:56.500 [pool-74-thread-4] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 80 bytes
+13:41:56.501 [pool-74-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 112 bytes
+13:41:56.501 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_REQUEST
+13:41:56.501 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_REQUEST
+13:41:56.501 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Authenticating user 'someuser' with service 'ssh-connection' and method 'keyboard-interactive'
+13:41:56.502 [pool-74-thread-5] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 112 bytes
+13:41:56.502 [pool-74-thread-5] DEBUG o.a.s.server.session.ServerSession - Authentication not finished
+13:41:56.502 [pool-74-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
+13:41:56.503 [pool-74-thread-6] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_USERAUTH_INFO_RESPONSE
+13:41:56.503 [pool-74-thread-6] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_USERAUTH_INFO_RESPONSE
+13:41:56.504 [pool-74-thread-6] DEBUG o.a.s.server.session.ServerSession - Authentication succeeded
+13:41:56.504 [pool-74-thread-6] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
+13:41:56.505 [pool-74-thread-6] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:36379 authenticated
+13:41:56.505 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Executing command: somecommand
+13:41:56.506 [pool-74-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 64 bytes
+13:41:56.507 [pool-74-thread-7] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_OPEN
+13:41:56.507 [pool-74-thread-7] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_CHANNEL_OPEN session
+13:41:56.508 [pool-74-thread-7] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
+13:41:56.509 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #37 has been opened
+13:41:56.509 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 80 bytes
+13:41:56.509 [pool-74-thread-8] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_REQUEST
+13:41:56.509 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_REQUEST on channel 138
+13:41:56.509 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Received channel request: exec
+13:41:56.510 [pool-74-thread-8] INFO  o.a.s.server.channel.ChannelSession - Executing command: somecommand
+13:41:56.510 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_EOF on channel 138
+13:41:56.510 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
+13:41:56.511 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_REQUEST exit-status on channel 138
+13:41:56.511 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 64 bytes
+13:41:56.511 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Closing channel 138 gracefully
+13:41:56.512 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Wait 5s for shell to exit cleanly
+13:41:56.512 [pool-74-thread-8] DEBUG o.a.s.server.channel.ChannelSession - Send SSH_MSG_CHANNEL_CLOSE on channel 138
+13:41:56.512 [pool-74-thread-8] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 48 bytes
+13:41:56.551 [pool-74-thread-9] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 48 bytes
+13:41:56.551 [pool-74-thread-9] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_CHANNEL_CLOSE
+13:41:56.552 [pool-74-thread-9] DEBUG o.a.s.server.channel.ChannelSession - Received SSH_MSG_CHANNEL_CLOSE on channel 138
+13:41:56.709 [Test worker] INFO  o.h.g.s.i.DefaultOperationHandler - Channel #37 has been closed with exit status 0
+13:41:56.710 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
+13:41:56.713 [pool-74-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Socket has been disconnected, closing IoSession now
+13:41:56.713 [pool-74-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
+13:41:56.713 [pool-74-thread-10] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
+13:41:56.713 [pool-74-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing session
+13:41:56.714 [pool-74-thread-10] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
+13:41:56.714 [pool-74-thread-10] DEBUG o.a.s.server.session.ServerSession - IoSession closed
+13:41:56.714 [pool-74-thread-10] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:36379 closed
+13:41:57.198 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Creating Nio2Acceptor
+13:41:57.199 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/127.0.0.1:33845
+13:41:57.199 [Test worker] DEBUG o.a.sshd.common.io.nio2.Nio2Acceptor - Binding Nio2Acceptor to address localhost/0:0:0:0:0:0:0:1:33845
+13:41:57.233 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+13:41:57.260 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
+13:41:57.261 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
+13:41:57.261 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-03:31:15.243 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
-03:31:15.244 [Test worker] DEBUG o.h.g.ssh.internal.DefaultSshService - Using known-hosts file: /tmp/junit5536850676730086787/junit757562017165038088.tmp
-03:31:15.246 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Creating Nio2Session on /127.0.0.1:49749 from /127.0.0.1:36424
-03:31:15.246 [pool-76-thread-1] INFO  o.a.s.server.session.ServerSession - Session created from /127.0.0.1:36424
-03:31:15.246 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 25 bytes
-03:31:15.247 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 384 bytes
-03:31:15.248 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 20 bytes
-03:31:15.248 [pool-76-thread-1] DEBUG o.a.s.server.session.ServerSession - Client version string: SSH-2.0-JSCH-0.1.46
-03:31:15.250 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 400 bytes
-03:31:15.250 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXINIT
-03:31:15.250 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_KEXINIT
-03:31:15.256 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 152 bytes
-03:31:15.256 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXDH_INIT
-03:31:15.256 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Received SSH_MSG_KEXDH_INIT
-03:31:15.264 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - K_S:  00 00 00 07 73 73 68 2d 64 73 73 00 00 00 81 00 eb ee d0 69 13 f2 eb 92 08 5f 51 b7 b8 8a cb 0b 6f 7b 5c 2d 36 65 a4 20 f1 0b 65 72 d5 ff 04 e2 f9 29 b9 af 11 79 20 52 27 1b 97 4b 36 8b 9c e6 e1 19 ce 2c e7 2d fc fe 64 7e 05 2f 8e 2c 25 b6 bc 7e 7b 39 35 d2 85 b2 0d 94 61 7c 63 9a 24 8c be ed 73 47 a8 a3 01 f3 ac 3c 89 d5 4d 14 78 10 42 92 69 82 3c 98 d9 9d ae 31 34 69 da 90 a5 e4 05 14 4b 85 e1 cc 0a 97 7e 5f fd c7 13 1c 0e fb 00 00 00 15 00 84 48 9c 6d de 8a d9 37 b0 ce 33 84 48 a1 02 f9 6c 5f 44 7f 00 00 00 80 24 2d e6 bf 05 a6 3a 68 0c f9 d8 ca 3c 7a 5d 48 fc 7e 81 11 45 57 a9 c8 19 e6 b2 74 99 c9 65 f0 e9 67 d5 04 56 11 46 05 52 08 8f b4 d5 1c c0 3c 59 e5 cb 74 46 88 66 f6 1f cb 5b 04 09 64 d6 84 91 34 69 76 33 1d 56 31 fc de 42 1a 2c 47 1f 4a 18 48 f1 ad 99 b7 d1 6d 32 7f 8a da 07 1d b0 65 64 03 0d da 68 5d 89 10 ff 86 09 94 9d d9 94 88 d8 ce 7e 30 33 19 f4 8f a1 34 a8 d5 e1 48 dd 02 00 00 00 80 51 b7 6e 42 a7 81 10 d3 35 f8 f0 12 ca 85 1c a5 67 b2 20 70 18 bb 0a fc c7 35 48 2f 45 f4 09 ef c6 ff ec 21 b5 d2 96 27 3e 34 6c e0 ea 8c d1 89 1c 72 49 46 ac e5 da 7c 5c 13 6b e8 8a f0 fb 01 53 fe 08 03 2e 17 9c 9e 57 4a d1 3b 16 b1 84 7d 58 65 c8 ea fe 6e 2e 82 a6 35 e4 de 8a 6a 26 3b 7e e4 89 97 48 4e be 6d 9f 09 32 df 3a 07 ad ba 35 af b0 6d ae d0 a9 4e 8d 47 fe af 89 1c 57 47
-03:31:15.264 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - f:    45 3b 02 51 3c 6d 4f 5a c0 17 b6 43 3d b7 8d 57 75 56 77 03 fd 75 6b 28 02 ce 5a ba f1 ac 5b 64 0e b3 64 00 50 be 5a 8b ed ee af 36 ba 0c 9c 66 82 19 74 60 7b 6c cb 78 3a 76 80 bc 8c 48 f9 0e b5 b6 88 15 4a ee 84 88 f1 88 e8 95 6f 34 93 da bb 73 7a b3 80 ad 3b fb 7e 33 28 2f e9 b6 d8 57 fc b4 8e 5e b7 c5 7a 71 9d c5 b5 92 5f 9f a7 fc 7e 2f 6e db 96 4f 20 bf 39 fb 0b aa 35 fb 9c 67
-03:31:15.264 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - sigH: 00 00 00 07 73 73 68 2d 64 73 73 00 00 00 28 65 3c e1 b7 4f 1a 08 f0 d1 66 09 e7 51 d6 ef 12 9d ea 0a 30 24 da 10 f0 f1 f0 ed 07 29 ca 01 23 f9 51 ad 7a d4 42 9d f5
-03:31:15.264 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Send SSH_MSG_KEXDH_REPLY
-03:31:15.264 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 648 bytes
-03:31:15.265 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Send SSH_MSG_NEWKEYS
-03:31:15.265 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 16 bytes
-03:31:15.271 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
-03:31:15.271 [pool-76-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 88 bytes
-03:31:15.271 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_DISCONNECT
-03:31:15.272 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_DISCONNECT (reason=3, msg=com.jcraft.jsch.JSchException: reject HostKey: localhost)
-03:31:15.272 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Closing session
-03:31:15.272 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
-03:31:15.272 [pool-76-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
-03:31:15.272 [pool-76-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
+13:41:57.261 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
+13:41:57.263 [Test worker] DEBUG o.h.g.ssh.internal.DefaultSshService - Using known-hosts file: /tmp/junit4431378937895763636/junit2318220207651928700.tmp
+13:41:57.264 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Creating Nio2Session on /127.0.0.1:33845 from /127.0.0.1:53556
+13:41:57.265 [pool-76-thread-1] INFO  o.a.s.server.session.ServerSession - Session created from /127.0.0.1:53556
+13:41:57.265 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 25 bytes
+13:41:57.266 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 384 bytes
+13:41:57.267 [pool-76-thread-1] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 20 bytes
+13:41:57.267 [pool-76-thread-1] DEBUG o.a.s.server.session.ServerSession - Client version string: SSH-2.0-JSCH-0.1.46
+13:41:57.268 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 400 bytes
+13:41:57.268 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXINIT
+13:41:57.269 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_KEXINIT
+13:41:57.276 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 152 bytes
+13:41:57.276 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_KEXDH_INIT
+13:41:57.276 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Received SSH_MSG_KEXDH_INIT
+13:41:57.286 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - K_S:  00 00 00 07 73 73 68 2d 64 73 73 00 00 00 81 00 eb ee d0 69 13 f2 eb 92 08 5f 51 b7 b8 8a cb 0b 6f 7b 5c 2d 36 65 a4 20 f1 0b 65 72 d5 ff 04 e2 f9 29 b9 af 11 79 20 52 27 1b 97 4b 36 8b 9c e6 e1 19 ce 2c e7 2d fc fe 64 7e 05 2f 8e 2c 25 b6 bc 7e 7b 39 35 d2 85 b2 0d 94 61 7c 63 9a 24 8c be ed 73 47 a8 a3 01 f3 ac 3c 89 d5 4d 14 78 10 42 92 69 82 3c 98 d9 9d ae 31 34 69 da 90 a5 e4 05 14 4b 85 e1 cc 0a 97 7e 5f fd c7 13 1c 0e fb 00 00 00 15 00 84 48 9c 6d de 8a d9 37 b0 ce 33 84 48 a1 02 f9 6c 5f 44 7f 00 00 00 80 24 2d e6 bf 05 a6 3a 68 0c f9 d8 ca 3c 7a 5d 48 fc 7e 81 11 45 57 a9 c8 19 e6 b2 74 99 c9 65 f0 e9 67 d5 04 56 11 46 05 52 08 8f b4 d5 1c c0 3c 59 e5 cb 74 46 88 66 f6 1f cb 5b 04 09 64 d6 84 91 34 69 76 33 1d 56 31 fc de 42 1a 2c 47 1f 4a 18 48 f1 ad 99 b7 d1 6d 32 7f 8a da 07 1d b0 65 64 03 0d da 68 5d 89 10 ff 86 09 94 9d d9 94 88 d8 ce 7e 30 33 19 f4 8f a1 34 a8 d5 e1 48 dd 02 00 00 00 80 51 b7 6e 42 a7 81 10 d3 35 f8 f0 12 ca 85 1c a5 67 b2 20 70 18 bb 0a fc c7 35 48 2f 45 f4 09 ef c6 ff ec 21 b5 d2 96 27 3e 34 6c e0 ea 8c d1 89 1c 72 49 46 ac e5 da 7c 5c 13 6b e8 8a f0 fb 01 53 fe 08 03 2e 17 9c 9e 57 4a d1 3b 16 b1 84 7d 58 65 c8 ea fe 6e 2e 82 a6 35 e4 de 8a 6a 26 3b 7e e4 89 97 48 4e be 6d 9f 09 32 df 3a 07 ad ba 35 af b0 6d ae d0 a9 4e 8d 47 fe af 89 1c 57 47
+13:41:57.286 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - f:    56 8e 10 27 90 30 4f 4f 61 da 64 1f 3e 8d e7 7e 20 e6 f9 9d 3a 63 ce 3b 1a 3e b1 64 c7 91 59 78 14 62 66 df 2b 8c 03 b9 3f 8a d5 45 f1 60 09 c4 66 44 2f ac dc 1b f7 ee 22 e9 9a dc ca ae fe d2 37 b8 dd ff fa c5 47 14 6f 0e 51 36 a0 1b ee 7e 3f a6 b6 fd c2 ef 7a eb 7f ee 8b 9a e1 62 37 2c 14 8e 56 9f 72 6e 51 44 5b 0a b3 8f 53 cd 0d bf 9c 74 d5 69 21 ad a3 7a 12 cc 41 41 ad 11 16 aa
+13:41:57.286 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - sigH: 00 00 00 07 73 73 68 2d 64 73 73 00 00 00 28 7f 12 0f bc c6 e8 22 7e fd 24 2f d1 be 42 17 0d a9 ef 4d 45 4d e4 23 cb f2 d5 b2 28 c0 22 51 b0 12 a8 77 aa 2b d9 fc fa
+13:41:57.286 [pool-76-thread-2] DEBUG org.apache.sshd.server.kex.DHG1 - Send SSH_MSG_KEXDH_REPLY
+13:41:57.286 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 648 bytes
+13:41:57.286 [pool-76-thread-2] DEBUG o.a.s.server.session.ServerSession - Send SSH_MSG_NEWKEYS
+13:41:57.286 [pool-76-thread-2] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Writing 16 bytes
+13:41:57.294 [pool-76-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Read 88 bytes
+13:41:57.294 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
+13:41:57.294 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Received packet SSH_MSG_DISCONNECT
+13:41:57.294 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Received SSH_MSG_DISCONNECT (reason=3, msg=com.jcraft.jsch.JSchException: reject HostKey: localhost)
+13:41:57.294 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Closing session
+13:41:57.295 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
+13:41:57.295 [pool-76-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
+13:41:57.295 [pool-76-thread-3] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
+13:41:57.295 [pool-76-thread-3] DEBUG o.a.s.server.session.ServerSession - IoSession closed
+13:41:57.295 [pool-76-thread-3] INFO  o.a.s.server.session.ServerSession - Session null@/127.0.0.1:53556 closed
 </pre>
 </span>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 3, 2014 3:31:16 AM</p>
+<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 3, 2014 1:41:58 PM</p>
 </div>
 </div>
 </body>
