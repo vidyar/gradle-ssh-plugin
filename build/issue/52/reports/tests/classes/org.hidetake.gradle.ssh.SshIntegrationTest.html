@@ -28,13 +28,13 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">2</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.372s</div>
+<div class="counter">0.532s</div>
 <p>duration</p>
 </div>
 </td>
@@ -43,8 +43,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -54,13 +54,61 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="dry run sshtask"></a>
+<h3 class="failures">dry run sshtask</h3>
+<span class="code">
+<pre>Too few invocations for:
+
+1 * spy.execute(_, 'ls -l')   (0 invocations)
+
+Unmatched invocations (ordered by similarity):
+
+1 * spy.execute([:], 'ls -l', org.codehaus.groovy.runtime.wrappers.GroovyObjectWrapper@5c4bf57b)
+1 * spy.with(org.hidetake.gradle.ssh.SshIntegrationTest$_createProject_closure1_closure5_closure8@682af542)
+1 * spy.&lt;init&gt;(org.hidetake.gradle.ssh.api.SessionSpec@6b8302a4)
+
+
+	at org.spockframework.mock.runtime.InteractionScope.verifyInteractions(InteractionScope.java:78)
+	at org.spockframework.mock.runtime.MockController.leaveScope(MockController.java:76)
+	at org.hidetake.gradle.ssh.SshIntegrationTest.dry run sshtask(SshIntegrationTest.groovy:21)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="dry run task with sshexec"></a>
+<h3 class="failures">dry run task with sshexec</h3>
+<span class="code">
+<pre>Too few invocations for:
+
+1 * spy.execute(_, 'ls -l')   (0 invocations)
+
+Unmatched invocations (ordered by similarity):
+
+1 * spy.execute([:], 'ls -l', org.codehaus.groovy.runtime.wrappers.GroovyObjectWrapper@357fb506)
+1 * spy.with(org.hidetake.gradle.ssh.SshIntegrationTest$_createProject_closure1_closure6_closure9_closure10@5803214e)
+1 * spy.&lt;init&gt;(org.hidetake.gradle.ssh.api.SessionSpec@598b083a)
+
+
+	at org.spockframework.mock.runtime.InteractionScope.verifyInteractions(InteractionScope.java:78)
+	at org.spockframework.mock.runtime.MockController.leaveScope(MockController.java:76)
+	at org.hidetake.gradle.ssh.SshIntegrationTest.dry run task with sshexec(SshIntegrationTest.groovy:41)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -71,37 +119,37 @@
 </tr>
 </thead>
 <tr>
-<td class="success">dry run sshtask</td>
-<td>0.230s</td>
-<td class="success">passed</td>
+<td class="failures">dry run sshtask</td>
+<td>0.373s</td>
+<td class="failures">failed</td>
 </tr>
 <tr>
-<td class="success">dry run task with sshexec</td>
-<td>0.142s</td>
-<td class="success">passed</td>
+<td class="failures">dry run task with sshexec</td>
+<td>0.159s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>00:32:46.018 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-00:32:46.191 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Executing command: ls -l
-00:32:46.253 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-00:32:46.314 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':sshExecTask'
-00:32:46.315 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':sshExecTask' is up-to-date
-00:32:46.318 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':sshExecTask' (up-to-date check took 0.001 secs) due to:
+<pre>04:14:12.926 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+04:14:13.177 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Execute a command (ls -l) with options ([:])
+04:14:13.254 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+04:14:13.330 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':sshExecTask'
+04:14:13.331 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':sshExecTask' is up-to-date
+04:14:13.333 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':sshExecTask' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-00:32:46.320 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':sshExecTask'.
-00:32:46.331 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Executing command: ls -l
-00:32:46.332 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':sshExecTask'
+04:14:13.334 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':sshExecTask'.
+04:14:13.345 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Execute a command (ls -l) with options ([:])
+04:14:13.346 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':sshExecTask'
 </pre>
 </span>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 4, 2014 12:33:30 AM</p>
+<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 4, 2014 4:15:44 AM</p>
 </div>
 </div>
 </body>
