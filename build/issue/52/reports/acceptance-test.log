@@ -1,0 +1,420 @@
+Starting Build
+Settings evaluated using empty settings script.
+Projects loaded. Root project using build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle'.
+Included projects: [root project 'acceptance-test']
+Evaluating root project 'acceptance-test' using build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle'.
+Compiling build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle' using StatementExtractingScriptTransformer.
+Compiling build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle' using BuildScriptTransformer.
+Compiling script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' using StatementExtractingScriptTransformer.
+Compiling script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' using BuildScriptTransformer.
+Added feature: executing a command
+Added feature: filter hosts by role
+Added feature: executing commands sequentially
+Added feature: each command should have independent environment
+Added feature: executing a command with PTY allocation
+Added feature: executing commands concurrently
+Added feature: handling failure of the remote command
+Added feature: handling failure of the remote command in background
+Added feature: executing a privileged command by sudo (aggressive test because requires creating an user and setting up sudoers)
+Added feature: executing a privileged command by sudo without password (aggressive test because requires creating an user and setting up sudoers)
+Added feature: using remote specific identity (aggressive test because requires creating an user and setting up key pair)
+Added feature: executing a shell
+Added feature: sending files to the remote host and acquiring result files
+All projects evaluated.
+Selected primary tasks 'test', 'aggressiveTest'
+Tasks to be executed: [task ':executeCommand', task ':executeCommandByRole', task ':executeCommandWithPty', task ':executeConcurrently', task ':executeSequentially', task ':executeShell', task ':failureStatus', task ':failureStatusInBackground', task ':putAndGetFiles', task ':testEnvironmentOfCommand', task ':test', task ':createUserForSudoNoPassword', task ':executeSudoNoPassword', task ':deleteUserForSudoNoPassword', task ':createUserForSudoWithPassword', task ':executeSudoWithPassword', task ':deleteUserForSudoWithPassword', task ':createUserWithAuthorizedKey', task ':useRemoteSpecificIdentity', task ':deleteUserWithAuthorizedKey', task ':aggressiveTest']
+:executeCommand (Thread[main,5,main]) started.
+:executeCommand
+Executing task ':executeCommand' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (expr 8284 + 2291) with options ([:])
+Channel #0 has been opened
+10575
+Channel #0 has been closed with exit status 0
+:executeCommand (Thread[main,5,main]) completed. Took 1.419 secs.
+:executeCommandByRole (Thread[main,5,main]) started.
+:executeCommandByRole
+Executing task ':executeCommandByRole' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (expr 9434 + 2713) with options ([:])
+Channel #1 has been opened
+12147
+Channel #1 has been closed with exit status 0
+:executeCommandByRole (Thread[main,5,main]) completed. Took 0.322 secs.
+:executeCommandWithPty (Thread[main,5,main]) started.
+:executeCommandWithPty
+Executing task ':executeCommandWithPty' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (env | grep -v SSH_TTY) in background
+Channel #2 has been opened
+Execute a command (env | grep SSH_TTY) in background
+Channel #3 has been opened
+Execute a command (env | grep -v SSH_TTY) with options ([:])
+Channel #4 has been opened
+SHELL=/bin/bash
+XDG_SESSION_COOKIE=5fa22c462511e9f37a014a850000091b-1391564598.510935-1757962384
+SSH_CLIENT=127.0.0.1 53300 22
+LC_ALL=en_US.UTF-8
+USER=travis
+TRAVIS=true
+MAIL=/var/mail/travis
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/travis
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
+LANG=en_US.UTF-8
+SHELL=/bin/bash
+SHLVL=1
+XDG_SESSION_COOKIE=5fa22c462511e9f37a014a850000091b-1391564598.625283-780773557
+HOME=/home/travis
+SSH_CLIENT=127.0.0.1 53301 22
+CI=true
+LC_ALL=en_US.UTF-8
+LOGNAME=travis
+USER=travis
+LC_CTYPE=en_US.UTF-8
+TRAVIS=true
+SSH_CONNECTION=127.0.0.1 53300 127.0.0.1 22
+MAIL=/var/mail/travis
+DEBIAN_FRONTEND=noninteractive
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/usr/bin/env
+PWD=/home/travis
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
+LANG=en_US.UTF-8
+SHLVL=1
+HOME=/home/travis
+CI=true
+LOGNAME=travis
+LC_CTYPE=en_US.UTF-8
+SSH_CONNECTION=127.0.0.1 53301 127.0.0.1 22
+DEBIAN_FRONTEND=noninteractive
+SSH_TTY=/dev/pts/1
+_=/usr/bin/env
+Channel #4 has been closed with exit status 0
+Execute a command (env | grep SSH_TTY) with options ([pty:true])
+Channel #5 has been opened
+SSH_TTY=/dev/pts/1
+Channel #5 has been closed with exit status 0
+Channel #2 has been closed with exit status 0
+Channel #3 has been closed with exit status 0
+:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.769 secs.
+:executeConcurrently (Thread[main,5,main]) started.
+:executeConcurrently
+Executing task ':executeConcurrently' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (sleep 3 && date +%s > /tmp/data-5129) in background
+Channel #6 has been opened
+Execute a command (sleep 2 && date +%s > /tmp/data-7366) in background
+Channel #7 has been opened
+Execute a command (sleep 1 && date +%s > /tmp/data-3258) in background
+Channel #8 has been opened
+Execute a command (date +%s > /tmp/data-6678) in background
+Channel #9 has been opened
+Channel #9 has been closed with exit status 0
+Channel #8 has been closed with exit status 0
+Channel #7 has been closed with exit status 0
+Channel #6 has been closed with exit status 0
+Execute a command (cat /tmp/data-5129 && rm /tmp/data-5129) with options ([:])
+Channel #10 has been opened
+1391564602
+Channel #10 has been closed with exit status 0
+Execute a command (cat /tmp/data-7366 && rm /tmp/data-7366) with options ([:])
+Channel #11 has been opened
+1391564601
+Channel #11 has been closed with exit status 0
+Execute a command (cat /tmp/data-3258 && rm /tmp/data-3258) with options ([:])
+Channel #12 has been opened
+1391564600
+Channel #12 has been closed with exit status 0
+Execute a command (cat /tmp/data-6678 && rm /tmp/data-6678) with options ([:])
+Channel #13 has been opened
+1391564599
+Channel #13 has been closed with exit status 0
+:executeConcurrently (Thread[main,5,main]) completed. Took 4.316 secs.
+:executeSequentially (Thread[main,5,main]) started.
+:executeSequentially
+Executing task ':executeSequentially' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (expr 9084 + 4700 > /tmp/data-1200) with options ([:])
+Channel #14 has been opened
+Channel #14 has been closed with exit status 0
+Execute a command (expr 9084 + `cat /tmp/data-1200` > /tmp/data-7192) with options ([:])
+Channel #15 has been opened
+Channel #15 has been closed with exit status 0
+Execute a command (cat /tmp/data-1200 && rm /tmp/data-1200) with options ([:])
+Channel #16 has been opened
+13784
+Channel #16 has been closed with exit status 0
+Execute a command (cat /tmp/data-7192 && rm /tmp/data-7192) with options ([:])
+Channel #17 has been opened
+22868
+Channel #17 has been closed with exit status 0
+:executeSequentially (Thread[main,5,main]) completed. Took 0.934 secs.
+:executeShell (Thread[main,5,main]) started.
+:executeShell
+Executing task ':executeShell' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a shell with options ([:])
+Channel #18 has been opened
+Last login: Wed Feb  5 01:43:18 2014 from localhost.localdomain
+
+travis@testing-worker-linux-7-2-13126-linux-12-18242983:~$ 
+exit 0
+
+logout
+Channel #18 has been closed with exit status 0
+:executeShell (Thread[main,5,main]) completed. Took 0.908 secs.
+:failureStatus (Thread[main,5,main]) started.
+:failureStatus
+Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (exit 1) with options ([:])
+Channel #19 has been opened
+Channel #19 has been closed with exit status 1
+:failureStatus (Thread[main,5,main]) completed. Took 0.352 secs.
+:failureStatusInBackground (Thread[main,5,main]) started.
+:failureStatusInBackground
+Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (exit 1) in background
+Channel #20 has been opened
+Channel #20 has been closed with exit status 1
+:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.318 secs.
+:putAndGetFiles (Thread[main,5,main]) started.
+:putAndGetFiles
+Executing task ':putAndGetFiles' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/X) to remote (/tmp/data-4824)
+Channel #21 has been opened
+Channel #21 has been closed with exit status -1
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/Y) to remote (/tmp/data-5464)
+Channel #22 has been opened
+Channel #22 has been closed with exit status -1
+Execute a command (expr `cat /tmp/data-4824` + `cat /tmp/data-5464` > /tmp/data-319) with options ([:])
+Channel #23 has been opened
+Channel #23 has been closed with exit status 0
+Execute a command (expr `cat /tmp/data-4824` - `cat /tmp/data-5464` > /tmp/data-1066) with options ([:])
+Channel #24 has been opened
+Channel #24 has been closed with exit status 0
+Get a remote file (/tmp/data-319) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/A)
+Channel #25 has been opened
+Channel #25 has been closed with exit status -1
+Get a remote file (/tmp/data-1066) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/B)
+Channel #26 has been opened
+Channel #26 has been closed with exit status -1
+:putAndGetFiles (Thread[main,5,main]) completed. Took 0.632 secs.
+:testEnvironmentOfCommand (Thread[main,5,main]) started.
+:testEnvironmentOfCommand
+Executing task ':testEnvironmentOfCommand' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (export testdata=dummy) with options ([:])
+Channel #27 has been opened
+Channel #27 has been closed with exit status 0
+Execute a command (echo "testdata is $testdata") with options ([:])
+Channel #28 has been opened
+testdata is 
+Channel #28 has been closed with exit status 0
+:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.508 secs.
+:test (Thread[main,5,main]) started.
+:test
+Skipping task ':test' as it has no actions.
+:test (Thread[main,5,main]) completed. Took 0.003 secs.
+:createUserForSudoNoPassword (Thread[main,5,main]) started.
+:createUserForSudoNoPassword
+Executing task ':createUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (sudo useradd -m user9646n) with options ([:])
+Channel #29 has been opened
+Channel #29 has been closed with exit status 0
+:createUserForSudoNoPassword FAILED
+:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.508 secs.
+:deleteUserForSudoNoPassword (Thread[main,5,main]) started.
+:deleteUserForSudoNoPassword
+Executing task ':deleteUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (sudo rm -v /etc/sudoers.d/user9646n) with options ([:])
+Channel #30 has been opened
+rm: cannot remove `/etc/sudoers.d/user9646n': No such file or directory
+Channel #30 has been closed with exit status 1
+:deleteUserForSudoNoPassword FAILED
+:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.336 secs.
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* Where:
+Script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' line: 261
+
+* What went wrong:
+Execution failed for task ':createUserForSudoNoPassword'.
+> org.hidetake.gradle.ssh.internal.DefaultOperationHandler.execute(Ljava/lang/String;Lgroovy/lang/Closure;)Ljava/lang/String;
+
+* Try:
+Run with --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':createUserForSudoNoPassword'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$1.run(DefaultTaskPlanExecutor.java:33)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:198)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:266)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.longRunningOperation(DefaultPersistentDirectoryStore.java:135)
+	at org.gradle.api.internal.changedetection.state.DefaultTaskArtifactStateCacheAccess.longRunningOperation(DefaultTaskArtifactStateCacheAccess.java:95)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:31)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: java.lang.AbstractMethodError: org.hidetake.gradle.ssh.internal.DefaultOperationHandler.execute(Ljava/lang/String;Lgroovy/lang/Closure;)Ljava/lang/String;
+	at features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71.doCall(/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle:261)
+	at org.hidetake.gradle.ssh.internal.DefaultSshService$_execute_closure4.doCall(DefaultSshService.groovy:76)
+	at org.hidetake.gradle.ssh.internal.DefaultSshService.execute(DefaultSshService.groovy:74)
+	at org.hidetake.gradle.ssh.api.SshService$execute.call(Unknown Source)
+	at org.hidetake.gradle.ssh.SshTask.perform(SshTask.groovy:35)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 52 more
+
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* Where:
+Script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' line: 278
+
+* What went wrong:
+Execution failed for task ':deleteUserForSudoNoPassword'.
+> Channel #30 finished with exit status 1
+
+* Try:
+Run with --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':deleteUserForSudoNoPassword'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$1.run(DefaultTaskPlanExecutor.java:33)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:198)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:266)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.longRunningOperation(DefaultPersistentDirectoryStore.java:135)
+	at org.gradle.api.internal.changedetection.state.DefaultTaskArtifactStateCacheAccess.longRunningOperation(DefaultTaskArtifactStateCacheAccess.java:95)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:31)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: java.lang.RuntimeException: Channel #30 finished with exit status 1
+	at org.hidetake.gradle.ssh.internal.SessionLifecycleManager.validateExitStatus(SessionLifecycleManager.groovy:60)
+	at org.hidetake.gradle.ssh.internal.SessionLifecycleManager$validateExitStatus.call(Unknown Source)
+	at org.hidetake.gradle.ssh.internal.DefaultOperationHandler.execute(DefaultOperationHandler.groovy:83)
+	at org.hidetake.gradle.ssh.internal.DefaultOperationHandler.execute(DefaultOperationHandler.groovy)
+	at features_2dnetaj9mji46geq4bf5iho8f$_run_closure26_closure75.doCall(/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle:278)
+	at org.hidetake.gradle.ssh.internal.DefaultSshService$_execute_closure4.doCall(DefaultSshService.groovy:76)
+	at org.hidetake.gradle.ssh.internal.DefaultSshService.execute(DefaultSshService.groovy:74)
+	at org.hidetake.gradle.ssh.api.SshService$execute.call(Unknown Source)
+	at org.hidetake.gradle.ssh.SshTask.perform(SshTask.groovy:35)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:63)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.doExecute(AnnotationProcessingTaskFactory.java:219)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:212)
+	at org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory$StandardTaskAction.execute(AnnotationProcessingTaskFactory.java:201)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:533)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:516)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 52 more
+
+==============================================================================
+
+BUILD FAILED
+
+Total time: 25.838 secs
