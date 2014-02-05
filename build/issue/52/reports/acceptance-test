@@ -1,0 +1,244 @@
+Starting Build
+Settings evaluated using empty settings script.
+Projects loaded. Root project using build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle'.
+Included projects: [root project 'acceptance-test']
+Evaluating root project 'acceptance-test' using build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle'.
+Compiling build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle' using StatementExtractingScriptTransformer.
+Compiling build file '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build.gradle' using BuildScriptTransformer.
+Compiling script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' using StatementExtractingScriptTransformer.
+Compiling script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' using BuildScriptTransformer.
+Added feature: executing a command
+Added feature: filter hosts by role
+Added feature: executing commands sequentially
+Added feature: each command should have independent environment
+Added feature: executing a command with PTY allocation
+Added feature: executing commands concurrently
+Added feature: handling failure of the remote command
+Added feature: handling failure of the remote command in background
+Added feature: executing a privileged command by sudo (aggressive test because requires creating an user and setting up sudoers)
+Added feature: executing a privileged command by sudo without password (aggressive test because requires creating an user and setting up sudoers)
+Added feature: using remote specific identity (aggressive test because requires creating an user and setting up key pair)
+Added feature: executing a shell
+Added feature: sending files to the remote host and acquiring result files
+All projects evaluated.
+Selected primary tasks 'test', 'aggressiveTest'
+Tasks to be executed: [task ':executeCommand', task ':executeCommandByRole', task ':executeCommandWithPty', task ':executeConcurrently', task ':executeSequentially', task ':executeShell', task ':failureStatus', task ':failureStatusInBackground', task ':putAndGetFiles', task ':testEnvironmentOfCommand', task ':test', task ':createUserForSudoNoPassword', task ':executeSudoNoPassword', task ':deleteUserForSudoNoPassword', task ':createUserForSudoWithPassword', task ':executeSudoWithPassword', task ':deleteUserForSudoWithPassword', task ':createUserWithAuthorizedKey', task ':useRemoteSpecificIdentity', task ':deleteUserWithAuthorizedKey', task ':aggressiveTest']
+:executeCommand (Thread[main,5,main]) started.
+:executeCommand
+Executing task ':executeCommand' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (expr 4491 + 5325) with options ([:])
+Channel #0 has been opened
+9816
+Channel #0 has been closed with exit status 0
+:executeCommand (Thread[main,5,main]) completed. Took 1.265 secs.
+:executeCommandByRole (Thread[main,5,main]) started.
+:executeCommandByRole
+Executing task ':executeCommandByRole' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (expr 5288 + 8685) with options ([:])
+Channel #1 has been opened
+13973
+Channel #1 has been closed with exit status 0
+:executeCommandByRole (Thread[main,5,main]) completed. Took 0.325 secs.
+:executeCommandWithPty (Thread[main,5,main]) started.
+:executeCommandWithPty
+Executing task ':executeCommandWithPty' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (env | grep -v SSH_TTY) in background
+Channel #2 has been opened
+Execute a command (env | grep SSH_TTY) in background
+Channel #3 has been opened
+Execute a command (env | grep -v SSH_TTY) with options ([:])
+Channel #4 has been opened
+SHELL=/bin/bash
+XDG_SESSION_COOKIE=5fa22c462511e9f37a014a850000091b-1391563689.23510-543063240
+SSH_CLIENT=127.0.0.1 60958 22
+LC_ALL=en_US.UTF-8
+USER=travis
+TRAVIS=true
+MAIL=/var/mail/travis
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/travis
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
+LANG=en_US.UTF-8
+SHLVL=1
+HOME=/home/travis
+CI=true
+SHELL=/bin/bash
+LOGNAME=travis
+XDG_SESSION_COOKIE=5fa22c462511e9f37a014a850000091b-1391563689.114619-580162867
+LC_CTYPE=en_US.UTF-8
+SSH_CLIENT=127.0.0.1 60959 22
+SSH_CONNECTION=127.0.0.1 60958 127.0.0.1 22
+LC_ALL=en_US.UTF-8
+DEBIAN_FRONTEND=noninteractive
+USER=travis
+_=/usr/bin/env
+TRAVIS=true
+MAIL=/var/mail/travis
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/travis
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
+LANG=en_US.UTF-8
+SHLVL=1
+HOME=/home/travis
+CI=true
+SSH_TTY=/dev/pts/1
+LOGNAME=travis
+LC_CTYPE=en_US.UTF-8
+SSH_CONNECTION=127.0.0.1 60959 127.0.0.1 22
+DEBIAN_FRONTEND=noninteractive
+_=/usr/bin/env
+Channel #4 has been closed with exit status 0
+Execute a command (env | grep SSH_TTY) with options ([pty:true])
+Channel #5 has been opened
+SSH_TTY=/dev/pts/1
+Channel #5 has been closed with exit status 0
+Channel #2 has been closed with exit status 0
+Channel #3 has been closed with exit status 0
+:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.717 secs.
+:executeConcurrently (Thread[main,5,main]) started.
+:executeConcurrently
+Executing task ':executeConcurrently' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (sleep 3 && date +%s > /tmp/data-514) in background
+Channel #6 has been opened
+Execute a command (sleep 2 && date +%s > /tmp/data-9128) in background
+Channel #7 has been opened
+Execute a command (sleep 1 && date +%s > /tmp/data-745) in background
+Channel #8 has been opened
+Execute a command (date +%s > /tmp/data-146) in background
+Channel #9 has been opened
+Channel #9 has been closed with exit status 0
+Channel #8 has been closed with exit status 0
+Channel #7 has been closed with exit status 0
+Channel #6 has been closed with exit status 0
+Execute a command (cat /tmp/data-514 && rm /tmp/data-514) with options ([:])
+Channel #10 has been opened
+1391563692
+Channel #10 has been closed with exit status 0
+Execute a command (cat /tmp/data-9128 && rm /tmp/data-9128) with options ([:])
+Channel #11 has been opened
+1391563691
+Channel #11 has been closed with exit status 0
+Execute a command (cat /tmp/data-745 && rm /tmp/data-745) with options ([:])
+Channel #12 has been opened
+1391563690
+Channel #12 has been closed with exit status 0
+Execute a command (cat /tmp/data-146 && rm /tmp/data-146) with options ([:])
+Channel #13 has been opened
+1391563689
+Channel #13 has been closed with exit status 0
+:executeConcurrently (Thread[main,5,main]) completed. Took 4.279 secs.
+:executeSequentially (Thread[main,5,main]) started.
+:executeSequentially
+Executing task ':executeSequentially' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (expr 7740 + 9270 > /tmp/data-8673) with options ([:])
+Channel #14 has been opened
+Channel #14 has been closed with exit status 0
+Execute a command (expr 7740 + `cat /tmp/data-8673` > /tmp/data-8763) with options ([:])
+Channel #15 has been opened
+Channel #15 has been closed with exit status 0
+Execute a command (cat /tmp/data-8673 && rm /tmp/data-8673) with options ([:])
+Channel #16 has been opened
+17010
+Channel #16 has been closed with exit status 0
+Execute a command (cat /tmp/data-8763 && rm /tmp/data-8763) with options ([:])
+Channel #17 has been opened
+24750
+Channel #17 has been closed with exit status 0
+:executeSequentially (Thread[main,5,main]) completed. Took 0.926 secs.
+:executeShell (Thread[main,5,main]) started.
+:executeShell
+Executing task ':executeShell' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a shell with options ([:])
+Channel #18 has been opened
+Last login: Wed Feb  5 01:28:09 2014 from localhost.localdomain
+
+travis@testing-worker-linux-7-2-13126-linux-11-18242418:~$ 
+exit 0
+
+logout
+exit 0
+Channel #18 has been closed with exit status 0
+:executeShell (Thread[main,5,main]) completed. Took 0.95 secs.
+:failureStatus (Thread[main,5,main]) started.
+:failureStatus
+Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (exit 1) with options ([:])
+Channel #19 has been opened
+Channel #19 has been closed with exit status 1
+:failureStatus (Thread[main,5,main]) completed. Took 0.33 secs.
+:failureStatusInBackground (Thread[main,5,main]) started.
+:failureStatusInBackground
+Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (exit 1) in background
+Channel #20 has been opened
+Channel #20 has been closed with exit status 1
+:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.31 secs.
+:putAndGetFiles (Thread[main,5,main]) started.
+:putAndGetFiles
+Executing task ':putAndGetFiles' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/X) to remote (/tmp/data-904)
+Channel #21 has been opened
+Channel #21 has been closed with exit status -1
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/Y) to remote (/tmp/data-8103)
+Channel #22 has been opened
+Channel #22 has been closed with exit status -1
+Execute a command (expr `cat /tmp/data-904` + `cat /tmp/data-8103` > /tmp/data-6015) with options ([:])
+Channel #23 has been opened
+Channel #23 has been closed with exit status 0
+Execute a command (expr `cat /tmp/data-904` - `cat /tmp/data-8103` > /tmp/data-8647) with options ([:])
+Channel #24 has been opened
+Channel #24 has been closed with exit status 0
+Get a remote file (/tmp/data-6015) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/A)
+Channel #25 has been opened
+Channel #25 has been closed with exit status -1
+Get a remote file (/tmp/data-8647) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/B)
+Channel #26 has been opened
+Channel #26 has been closed with exit status -1
+:putAndGetFiles (Thread[main,5,main]) completed. Took 0.624 secs.
+:testEnvironmentOfCommand (Thread[main,5,main]) started.
+:testEnvironmentOfCommand
+Executing task ':testEnvironmentOfCommand' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (export testdata=dummy) with options ([:])
+Channel #27 has been opened
+Channel #27 has been closed with exit status 0
+Execute a command (echo "testdata is $testdata") with options ([:])
+Channel #28 has been opened
+testdata is 
+Channel #28 has been closed with exit status 0
+:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.506 secs.
+:test (Thread[main,5,main]) started.
+:test
+Skipping task ':test' as it has no actions.
+:test (Thread[main,5,main]) completed. Took 0.002 secs.
+:createUserForSudoNoPassword (Thread[main,5,main]) started.
+:createUserForSudoNoPassword
+Executing task ':createUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (sudo useradd -m user3486n) with options ([:])
+Channel #29 has been opened
+Channel #29 has been closed with exit status 0
+:createUserForSudoNoPassword FAILED
+:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.406 secs.
+:deleteUserForSudoNoPassword (Thread[main,5,main]) started.
+:deleteUserForSudoNoPassword
+Executing task ':deleteUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Execute a command (sudo rm -v /etc/sudoers.d/user3486n) with options ([:])
+Channel #30 has been opened
+Channel #30 has been closed with exit status 1
+:deleteUserForSudoNoPassword FAILED
+:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.309 secs.
+
+BUILD FAILED
+
+Total time: 24.892 secs
