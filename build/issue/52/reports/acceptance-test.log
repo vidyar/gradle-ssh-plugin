@@ -25,22 +25,22 @@ Selected primary tasks 'test', 'aggressiveTest'
 Tasks to be executed: [task ':executeCommand', task ':executeCommandByRole', task ':executeCommandWithPty', task ':executeConcurrently', task ':executeSequentially', task ':executeShell', task ':failureStatus', task ':failureStatusInBackground', task ':putAndGetFiles', task ':testEnvironmentOfCommand', task ':test', task ':createUserForSudoNoPassword', task ':executeSudoNoPassword', task ':deleteUserForSudoNoPassword', task ':createUserForSudoWithPassword', task ':executeSudoWithPassword', task ':deleteUserForSudoWithPassword', task ':createUserWithAuthorizedKey', task ':useRemoteSpecificIdentity', task ':deleteUserWithAuthorizedKey', task ':aggressiveTest']
 :executeCommand (Thread[main,5,main]) started.
 :executeCommand
-Executing task ':executeCommand' (up-to-date check took 0.0 secs) due to:
+Executing task ':executeCommand' (up-to-date check took 0.001 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 5678 + 3061)
+Execute a command (expr 2624 + 9882)
 Channel #0 has been opened
-8739
+12506
 Channel #0 has been closed with exit status 0
-:executeCommand (Thread[main,5,main]) completed. Took 1.511 secs.
+:executeCommand (Thread[main,5,main]) completed. Took 1.211 secs.
 :executeCommandByRole (Thread[main,5,main]) started.
 :executeCommandByRole
 Executing task ':executeCommandByRole' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 1395 + 5735)
+Execute a command (expr 338 + 6642)
 Channel #1 has been opened
-7130
+6980
 Channel #1 has been closed with exit status 0
-:executeCommandByRole (Thread[main,5,main]) completed. Took 0.363 secs.
+:executeCommandByRole (Thread[main,5,main]) completed. Took 0.318 secs.
 :executeCommandWithPty (Thread[main,5,main]) started.
 :executeCommandWithPty
 Executing task ':executeCommandWithPty' (up-to-date check took 0.0 secs) due to:
@@ -52,8 +52,8 @@ Channel #3 has been opened
 Execute a command (env | grep -v SSH_TTY)
 Channel #4 has been opened
 SHELL=/bin/bash
-XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392252820.424985-1436181987
-SSH_CLIENT=127.0.0.1 33809 22
+XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392266345.643976-424382685
+SSH_CLIENT=127.0.0.1 42503 22
 LC_ALL=en_US.UTF-8
 USER=travis
 TRAVIS=true
@@ -62,34 +62,34 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 PWD=/home/travis
 CONTINUOUS_INTEGRATION=true 
 JAVA_HOME=/usr/lib/jvm/java-7-oracle
-SHELL=/bin/bash
 LANG=en_US.UTF-8
-XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392252820.578972-160330645
-SSH_CLIENT=127.0.0.1 33812 22
 SHLVL=1
-LC_ALL=en_US.UTF-8
 HOME=/home/travis
-USER=travis
 CI=true
-TRAVIS=true
 LOGNAME=travis
-MAIL=/var/mail/travis
 LC_CTYPE=en_US.UTF-8
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-SSH_CONNECTION=127.0.0.1 33809 127.0.0.1 22
-PWD=/home/travis
+SSH_CONNECTION=127.0.0.1 42503 127.0.0.1 22
 DEBIAN_FRONTEND=noninteractive
-CONTINUOUS_INTEGRATION=true 
 _=/usr/bin/env
+SHELL=/bin/bash
+XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392266345.734564-1612356034
+SSH_CLIENT=127.0.0.1 42504 22
+LC_ALL=en_US.UTF-8
+USER=travis
+TRAVIS=true
+SSH_TTY=/dev/pts/1
+MAIL=/var/mail/travis
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/travis
+CONTINUOUS_INTEGRATION=true 
 JAVA_HOME=/usr/lib/jvm/java-7-oracle
 LANG=en_US.UTF-8
 SHLVL=1
 HOME=/home/travis
-SSH_TTY=/dev/pts/1
 CI=true
 LOGNAME=travis
 LC_CTYPE=en_US.UTF-8
-SSH_CONNECTION=127.0.0.1 33812 127.0.0.1 22
+SSH_CONNECTION=127.0.0.1 42504 127.0.0.1 22
 DEBIAN_FRONTEND=noninteractive
 _=/usr/bin/env
 Channel #4 has been closed with exit status 0
@@ -99,74 +99,73 @@ SSH_TTY=/dev/pts/1
 Channel #5 has been closed with exit status 0
 Channel #2 has been closed with exit status 0
 Channel #3 has been closed with exit status 0
-:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.838 secs.
+:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.716 secs.
 :executeConcurrently (Thread[main,5,main]) started.
 :executeConcurrently
 Executing task ':executeConcurrently' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sleep 3 && date +%s > /tmp/data-6569) in background
+Execute a command (sleep 3 && date +%s > /tmp/data-2846) in background
 Channel #6 has been opened
-Execute a command (sleep 2 && date +%s > /tmp/data-1871) in background
+Execute a command (sleep 2 && date +%s > /tmp/data-2205) in background
 Channel #7 has been opened
-Execute a command (sleep 1 && date +%s > /tmp/data-2298) in background
+Execute a command (sleep 1 && date +%s > /tmp/data-6964) in background
 Channel #8 has been opened
-Execute a command (date +%s > /tmp/data-7909) in background
+Execute a command (date +%s > /tmp/data-6299) in background
 Channel #9 has been opened
 Channel #9 has been closed with exit status 0
 Channel #8 has been closed with exit status 0
 Channel #7 has been closed with exit status 0
 Channel #6 has been closed with exit status 0
-Execute a command (cat /tmp/data-6569 && rm /tmp/data-6569)
+Execute a command (cat /tmp/data-2846 && rm /tmp/data-2846)
 Channel #10 has been opened
-1392252824
+1392266349
 Channel #10 has been closed with exit status 0
-Execute a command (cat /tmp/data-1871 && rm /tmp/data-1871)
+Execute a command (cat /tmp/data-2205 && rm /tmp/data-2205)
 Channel #11 has been opened
-1392252823
+1392266348
 Channel #11 has been closed with exit status 0
-Execute a command (cat /tmp/data-2298 && rm /tmp/data-2298)
+Execute a command (cat /tmp/data-6964 && rm /tmp/data-6964)
 Channel #12 has been opened
-1392252822
+1392266347
 Channel #12 has been closed with exit status 0
-Execute a command (cat /tmp/data-7909 && rm /tmp/data-7909)
+Execute a command (cat /tmp/data-6299 && rm /tmp/data-6299)
 Channel #13 has been opened
-1392252821
+1392266346
 Channel #13 has been closed with exit status 0
-:executeConcurrently (Thread[main,5,main]) completed. Took 4.408 secs.
+:executeConcurrently (Thread[main,5,main]) completed. Took 4.255 secs.
 :executeSequentially (Thread[main,5,main]) started.
 :executeSequentially
 Executing task ':executeSequentially' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 3926 + 4657 > /tmp/data-1320)
+Execute a command (expr 6040 + 1417 > /tmp/data-1030)
 Channel #14 has been opened
 Channel #14 has been closed with exit status 0
-Execute a command (expr 3926 + `cat /tmp/data-1320` > /tmp/data-1490)
+Execute a command (expr 6040 + `cat /tmp/data-1030` > /tmp/data-3431)
 Channel #15 has been opened
 Channel #15 has been closed with exit status 0
-Execute a command (cat /tmp/data-1320 && rm /tmp/data-1320)
+Execute a command (cat /tmp/data-1030 && rm /tmp/data-1030)
 Channel #16 has been opened
-8583
+7457
 Channel #16 has been closed with exit status 0
-Execute a command (cat /tmp/data-1490 && rm /tmp/data-1490)
+Execute a command (cat /tmp/data-3431 && rm /tmp/data-3431)
 Channel #17 has been opened
-12509
+13497
 Channel #17 has been closed with exit status 0
-:executeSequentially (Thread[main,5,main]) completed. Took 0.95 secs.
+:executeSequentially (Thread[main,5,main]) completed. Took 0.919 secs.
 :executeShell (Thread[main,5,main]) started.
 :executeShell
 Executing task ':executeShell' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
 Execute a shell
 Channel #18 has been opened
-Last login: Thu Feb 13 00:53:40 2014 from localhost.localdomain
+Last login: Thu Feb 13 04:39:05 2014 from localhost.localdomain
 
-travis@testing-worker-linux-7-2-10807-linux-2-18773040:~$ 
+travis@testing-worker-linux-5-1-31853-linux-7-18773040:~$ 
 exit 0
 
 logout
-exit 0
 Channel #18 has been closed with exit status 0
-:executeShell (Thread[main,5,main]) completed. Took 1.513 secs.
+:executeShell (Thread[main,5,main]) completed. Took 0.873 secs.
 :failureStatus (Thread[main,5,main]) started.
 :failureStatus
 Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
@@ -174,7 +173,7 @@ Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
 Execute a command (exit 1)
 Channel #19 has been opened
 Channel #19 has been closed with exit status 1
-:failureStatus (Thread[main,5,main]) completed. Took 0.35 secs.
+:failureStatus (Thread[main,5,main]) completed. Took 0.326 secs.
 :failureStatusInBackground (Thread[main,5,main]) started.
 :failureStatusInBackground
 Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due to:
@@ -182,30 +181,30 @@ Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due
 Execute a command (exit 1) in background
 Channel #20 has been opened
 Channel #20 has been closed with exit status 1
-:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.355 secs.
+:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.306 secs.
 :putAndGetFiles (Thread[main,5,main]) started.
 :putAndGetFiles
 Executing task ':putAndGetFiles' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/X) to remote (/tmp/data-2591)
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/X) to remote (/tmp/data-2640)
 Channel #21 has been opened
 Channel #21 has been closed with exit status -1
-Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/Y) to remote (/tmp/data-9345)
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/Y) to remote (/tmp/data-8560)
 Channel #22 has been opened
 Channel #22 has been closed with exit status -1
-Execute a command (expr `cat /tmp/data-2591` + `cat /tmp/data-9345` > /tmp/data-2476)
+Execute a command (expr `cat /tmp/data-2640` + `cat /tmp/data-8560` > /tmp/data-3629)
 Channel #23 has been opened
 Channel #23 has been closed with exit status 0
-Execute a command (expr `cat /tmp/data-2591` - `cat /tmp/data-9345` > /tmp/data-9129)
+Execute a command (expr `cat /tmp/data-2640` - `cat /tmp/data-8560` > /tmp/data-1620)
 Channel #24 has been opened
 Channel #24 has been closed with exit status 0
-Get a remote file (/tmp/data-2476) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/A)
+Get a remote file (/tmp/data-3629) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/A)
 Channel #25 has been opened
 Channel #25 has been closed with exit status -1
-Get a remote file (/tmp/data-9129) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/B)
+Get a remote file (/tmp/data-1620) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/B)
 Channel #26 has been opened
 Channel #26 has been closed with exit status -1
-:putAndGetFiles (Thread[main,5,main]) completed. Took 0.691 secs.
+:putAndGetFiles (Thread[main,5,main]) completed. Took 0.618 secs.
 :testEnvironmentOfCommand (Thread[main,5,main]) started.
 :testEnvironmentOfCommand
 Executing task ':testEnvironmentOfCommand' (up-to-date check took 0.0 secs) due to:
@@ -217,30 +216,30 @@ Execute a command (echo "testdata is $testdata")
 Channel #28 has been opened
 testdata is 
 Channel #28 has been closed with exit status 0
-:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.537 secs.
+:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.508 secs.
 :test (Thread[main,5,main]) started.
 :test
 Skipping task ':test' as it has no actions.
-:test (Thread[main,5,main]) completed. Took 0.006 secs.
+:test (Thread[main,5,main]) completed. Took 0.002 secs.
 :createUserForSudoNoPassword (Thread[main,5,main]) started.
 :createUserForSudoNoPassword
 Executing task ':createUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo useradd -m user9314n)
+Execute a command (sudo useradd -m user5821n)
 Channel #29 has been opened
 Channel #29 has been closed with exit status 0
 :createUserForSudoNoPassword FAILED
-:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.374 secs.
+:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.314 secs.
 :deleteUserForSudoNoPassword (Thread[main,5,main]) started.
 :deleteUserForSudoNoPassword
 Executing task ':deleteUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo rm -v /etc/sudoers.d/user9314n)
+Execute a command (sudo rm -v /etc/sudoers.d/user5821n)
 Channel #30 has been opened
-rm: cannot remove `/etc/sudoers.d/user9314n': No such file or directory
+rm: cannot remove `/etc/sudoers.d/user5821n': No such file or directory
 Channel #30 has been closed with exit status 1
 :deleteUserForSudoNoPassword FAILED
-:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.344 secs.
+:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.297 secs.
 
 FAILURE: Build completed with 2 failures.
 
@@ -251,7 +250,7 @@ Script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gra
 
 * What went wrong:
 Execution failed for task ':createUserForSudoNoPassword'.
-> No signature of method: org.hidetake.gradle.ssh.internal.operation.OperationProxy.interaction() is applicable for argument types: (features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73) values: [features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73@1462f077]
+> No signature of method: org.hidetake.gradle.ssh.internal.operation.OperationProxy.interaction() is applicable for argument types: (features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73) values: [features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73@5f927daf]
   Possible solutions: iterator()
 
 * Try:
@@ -312,7 +311,7 @@ org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':createU
 	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
 	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
 	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
-Caused by: groovy.lang.MissingMethodException: No signature of method: org.hidetake.gradle.ssh.internal.operation.OperationProxy.interaction() is applicable for argument types: (features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73) values: [features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73@1462f077]
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.hidetake.gradle.ssh.internal.operation.OperationProxy.interaction() is applicable for argument types: (features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73) values: [features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72_closure73@5f927daf]
 Possible solutions: iterator()
 	at features_2dnetaj9mji46geq4bf5iho8f$_run_closure25_closure71_closure72.doCall(/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle:262)
 	at org.hidetake.gradle.ssh.internal.operation.OperationProxy.execute(OperationProxy.groovy:40)
@@ -425,4 +424,4 @@ Caused by: java.lang.RuntimeException: Channel #30 finished with exit status 1
 
 BUILD FAILED
 
-Total time: 30.057 secs
+Total time: 22.624 secs
