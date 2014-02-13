@@ -25,13 +25,13 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">40.799s</div>
+<div class="counter">41.463s</div>
 <p>duration</p>
 </div>
 </td>
@@ -40,8 +40,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">99%</div>
 <p>successful</p>
 </div>
 </td>
@@ -51,13 +51,25 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/org.hidetake.gradle.ssh.server.SudoCommandExecutionSpec.html">SudoCommandExecutionSpec</a>.
+<a href="classes/org.hidetake.gradle.ssh.server.SudoCommandExecutionSpec.html#logging, lines with line sep">logging, lines with line sep</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -76,7 +88,7 @@
 </td>
 <td>14</td>
 <td>0</td>
-<td>5.856s</td>
+<td>7.946s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -85,7 +97,7 @@
 </td>
 <td>34</td>
 <td>0</td>
-<td>0.266s</td>
+<td>0.643s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -94,22 +106,22 @@
 </td>
 <td>111</td>
 <td>0</td>
-<td>0.701s</td>
+<td>1.625s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success">
+<td class="failures">
 <a href="packages/org.hidetake.gradle.ssh.server.html">org.hidetake.gradle.ssh.server</a>
 </td>
 <td>39</td>
-<td>0</td>
-<td>33.976s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>31.249s</td>
+<td class="failures">97%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -127,7 +139,7 @@
 <a href="classes/org.hidetake.gradle.ssh.SshIntegrationTest.html">org.hidetake.gradle.ssh.SshIntegrationTest</a>
 <td>2</td>
 <td>0</td>
-<td>3.637s</td>
+<td>0.479s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -135,7 +147,7 @@
 <a href="classes/org.hidetake.gradle.ssh.SshPluginConventionSpec.html">org.hidetake.gradle.ssh.SshPluginConventionSpec</a>
 <td>5</td>
 <td>0</td>
-<td>0.926s</td>
+<td>1.327s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -143,7 +155,7 @@
 <a href="classes/org.hidetake.gradle.ssh.SshPluginSpec.html">org.hidetake.gradle.ssh.SshPluginSpec</a>
 <td>5</td>
 <td>0</td>
-<td>1.050s</td>
+<td>1.306s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -151,7 +163,7 @@
 <a href="classes/org.hidetake.gradle.ssh.SshTaskSpec.html">org.hidetake.gradle.ssh.SshTaskSpec</a>
 <td>2</td>
 <td>0</td>
-<td>0.243s</td>
+<td>4.834s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -159,7 +171,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.DefaultSshServiceSpec.html">org.hidetake.gradle.ssh.internal.DefaultSshServiceSpec</a>
 <td>9</td>
 <td>0</td>
-<td>0.064s</td>
+<td>0.222s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -167,7 +179,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.SessionLifecycleManagerSpec.html">org.hidetake.gradle.ssh.internal.SessionLifecycleManagerSpec</a>
 <td>5</td>
 <td>0</td>
-<td>0.091s</td>
+<td>0.246s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -175,7 +187,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.SshSpecSpec.html">org.hidetake.gradle.ssh.internal.SshSpecSpec</a>
 <td>20</td>
 <td>0</td>
-<td>0.111s</td>
+<td>0.175s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -183,7 +195,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.command.EngineSpec.html">org.hidetake.gradle.ssh.internal.command.EngineSpec</a>
 <td>6</td>
 <td>0</td>
-<td>0.150s</td>
+<td>0.299s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -191,7 +203,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.command.InteractionDelegateSpec.html">org.hidetake.gradle.ssh.internal.command.InteractionDelegateSpec</a>
 <td>8</td>
 <td>0</td>
-<td>0.045s</td>
+<td>0.100s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -199,7 +211,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.command.InteractionRuleSpec.html">org.hidetake.gradle.ssh.internal.command.InteractionRuleSpec</a>
 <td>47</td>
 <td>0</td>
-<td>0.117s</td>
+<td>0.448s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -207,7 +219,7 @@
 <a href="classes/org.hidetake.gradle.ssh.internal.command.LineOutputStreamSpec.html">org.hidetake.gradle.ssh.internal.command.LineOutputStreamSpec</a>
 <td>50</td>
 <td>0</td>
-<td>0.389s</td>
+<td>0.778s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -215,7 +227,7 @@
 <a href="classes/org.hidetake.gradle.ssh.server.AuthenticationSpec.html">org.hidetake.gradle.ssh.server.AuthenticationSpec</a>
 <td>9</td>
 <td>0</td>
-<td>8.890s</td>
+<td>15.856s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -223,7 +235,7 @@
 <a href="classes/org.hidetake.gradle.ssh.server.CommandExecutionSpec.html">org.hidetake.gradle.ssh.server.CommandExecutionSpec</a>
 <td>11</td>
 <td>0</td>
-<td>11.542s</td>
+<td>5.812s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -231,7 +243,7 @@
 <a href="classes/org.hidetake.gradle.ssh.server.FileTransferSpec.html">org.hidetake.gradle.ssh.server.FileTransferSpec</a>
 <td>2</td>
 <td>0</td>
-<td>0.388s</td>
+<td>0.424s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -239,7 +251,7 @@
 <a href="classes/org.hidetake.gradle.ssh.server.HostKeyCheckingSpec.html">org.hidetake.gradle.ssh.server.HostKeyCheckingSpec</a>
 <td>3</td>
 <td>0</td>
-<td>2.406s</td>
+<td>1.685s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
@@ -247,16 +259,16 @@
 <a href="classes/org.hidetake.gradle.ssh.server.ShellExecutionSpec.html">org.hidetake.gradle.ssh.server.ShellExecutionSpec</a>
 <td>2</td>
 <td>0</td>
-<td>1.965s</td>
+<td>1.355s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
-<td class="success"/>
+<td class="failures"/>
 <a href="classes/org.hidetake.gradle.ssh.server.SudoCommandExecutionSpec.html">org.hidetake.gradle.ssh.server.SudoCommandExecutionSpec</a>
 <td>12</td>
-<td>0</td>
-<td>8.785s</td>
-<td class="success">100%</td>
+<td>1</td>
+<td>6.117s</td>
+<td class="failures">91%</td>
 </tr>
 </tbody>
 </table>
@@ -264,7 +276,7 @@
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 4, 2014 12:33:49 AM</p>
+<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 13, 2014 12:50:52 AM</p>
 </div>
 </div>
 </body>
