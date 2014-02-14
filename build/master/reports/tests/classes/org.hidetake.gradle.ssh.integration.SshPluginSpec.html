@@ -34,7 +34,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.456s</div>
+<div class="counter">0.387s</div>
 <p>duration</p>
 </div>
 </td>
@@ -72,12 +72,12 @@
 </thead>
 <tr>
 <td class="success">dry run a task</td>
-<td>0.100s</td>
+<td>0.301s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">dry run a task with sshexec</td>
-<td>0.356s</td>
+<td>0.086s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -85,29 +85,36 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>09:50:34.867 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-09:50:34.906 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
-09:50:34.907 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
-09:50:34.907 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
+<pre>13:20:35.834 [pool-76-thread-11] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Socket has been disconnected, closing IoSession now
+13:20:35.834 [pool-76-thread-11] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing Nio2Session
+13:20:35.834 [pool-76-thread-11] DEBUG o.a.sshd.common.io.nio2.Nio2Session - Closing socket
+13:20:35.834 [pool-76-thread-11] DEBUG o.a.s.server.session.ServerSession - Closing session
+13:20:35.835 [pool-76-thread-11] DEBUG o.a.s.server.session.ServerSession - Closing IoSession
+13:20:35.835 [pool-76-thread-11] DEBUG o.a.s.server.session.ServerSession - IoSession closed
+13:20:35.835 [pool-76-thread-11] INFO  o.a.s.server.session.ServerSession - Session someuser@/127.0.0.1:60247 closed
+13:20:35.886 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+13:20:36.059 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
+13:20:36.060 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
+13:20:36.060 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-09:50:34.908 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
-09:50:34.915 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Execute a command (ls -l) with options ([:])
-09:50:34.916 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
-09:50:35.221 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
-09:50:35.260 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
-09:50:35.261 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
-09:50:35.261 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
+13:20:36.060 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
+13:20:36.149 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Execute a command (ls -l) with options ([:])
+13:20:36.149 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
+13:20:36.188 [Test worker] DEBUG o.g.a.i.a.m.DefaultLocalMavenRepositoryLocator - No local repository in Settings file defined. Using default path: /home/travis/.m2/repository
+13:20:36.225 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Starting to execute task ':testTask'
+13:20:36.225 [Test worker] DEBUG o.g.a.i.t.e.SkipUpToDateTaskExecuter - Determining if task ':testTask' is up-to-date
+13:20:36.225 [Test worker] INFO  o.g.a.i.t.e.SkipUpToDateTaskExecuter - Executing task ':testTask' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-09:50:35.262 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
-09:50:35.272 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Execute a command (ls -l) with options ([:])
-09:50:35.272 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
+13:20:36.226 [Test worker] DEBUG o.g.a.i.t.e.ExecuteActionsTaskExecuter - Executing actions for task ':testTask'.
+13:20:36.235 [Test worker] INFO  o.h.g.s.i.DryRunOperationHandler - Execute a command (ls -l) with options ([:])
+13:20:36.235 [Test worker] DEBUG o.g.a.i.t.e.ExecuteAtMostOnceTaskExecuter - Finished executing task ':testTask'
 </pre>
 </span>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 14, 2014 9:51:11 AM</p>
+<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 14, 2014 1:20:39 PM</p>
 </div>
 </div>
 </body>

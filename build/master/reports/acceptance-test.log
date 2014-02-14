@@ -3,43 +3,43 @@ Generating public/private rsa key pair.
 Your identification has been saved in /home/travis/.ssh/id_rsa.
 Your public key has been saved in /home/travis/.ssh/id_rsa.pub.
 The key fingerprint is:
-f7:63:a0:60:e8:cb:e6:3c:4e:47:e7:3f:79:de:57:55 
+a0:36:17:8d:75:fc:2c:66:4b:b6:dd:53:30:b8:3b:ac 
 The key's randomart image is:
 +--[ RSA 2048]----+
+|        ...  .   |
+|       + .. . o  |
+|      + .  o . o |
+|     . o  * +   .|
+|    + . S= * o . |
+|   . o    o = o  |
+|           . . . |
+|          E      |
 |                 |
-|                E|
-|                .|
-|     .          .|
-|    . + S o     .|
-|   . o + o o    .|
-|    o . o  .+   .|
-|   +oo   .o..o  .|
-|   +*.    .+. .. |
 +-----------------+
 +ssh-keygen -t rsa -N pass_phrase -C '' -f /home/travis/.ssh/id_rsa_pass
 Generating public/private rsa key pair.
 Your identification has been saved in /home/travis/.ssh/id_rsa_pass.
 Your public key has been saved in /home/travis/.ssh/id_rsa_pass.pub.
 The key fingerprint is:
-8f:58:e0:1b:63:23:ff:04:d1:2c:f0:bc:b1:42:d7:c5 
+98:90:7a:2a:8a:4f:bd:b3:d1:41:82:50:ec:c3:4e:7f 
 The key's randomart image is:
 +--[ RSA 2048]----+
-|    .    ..      |
-|     + + .E      |
-|    . O +        |
-|   . o B         |
-|    o X S        |
-|     = O o       |
-|      + o .      |
-|       o         |
-|        .        |
+|.o.              |
+| ... .           |
+| o. + .          |
+|  =. + o         |
+| o.o. + S        |
+|  .+..E.         |
+|. o o..          |
+|oo  .o           |
+|o.. oo           |
 +-----------------+
 +tee -a /home/travis/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYasFQuN2ltM2ak6crngksMhbC4fEaTGPlYGWY2hIoi6+TbDAkYfiJAlc6G/vs7pOtbZFpBgmpSXHDg0jdXNq7WudWeH4T4C7ygJdsRftBieAdymaGtjfbG4zxKP+6/mwJx72LX2TMz+PcsksZoJwlrnq3cIBbBkc2vHSn8IxwMjKH3wGGwZIjg/ma9b0DziN4+khuv07jM01AGM6feO327XXCWqk2WDuwwN+UIs+L9DioxMebOxv7vNCGip8GfomCI/RiGmf2P69W/9Lww5ChSZr0ewNK1FPzXbL6gChq3kvVHYSWJDj8Xp6esgzUIZX6crwBYrXHt92trKkWcHk7 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOW8d7syYoTuYlLxM76zg8MvHHlBaxgM89pH5HUiwe+l7N146QvVon/ErxsGQK3/7E5GFSlwEz7kUEMSZCYfTDAWj/1W9Xq3rKujbl9+oKuzdWgjOs7UFJ2m/udNRtcdAx7NqAclXKLCeANOFQUJKZB1is+SLFLzuY8glil2gMCTvS3f2NiMTti2E0zU22sAfq3a7WmrMqtYlIlheG6eqFQm9BSjS7f6IqRtlzTumea8oJ+32FdZa693fBBqjXrrRf5B9WAEVAHbyyQsOOnj5ayB50lWcXpKfzFCguVlTyt6i7VBZ/mtDBR9WGZwGdS+77ERD3Oa4kpvMtXioBx/MZ 
 +ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/home/travis/.ssh/known_hosts -o HashKnownHosts=no -o HostKeyAlgorithms=ssh-rsa -i /home/travis/.ssh/id_rsa localhost true
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
 +grep localhost /home/travis/.ssh/known_hosts
-localhost ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1oqA9Z6UwSaqM+ZNXL2nbd1MfKlYPEI2r3lz+cvxugUM3KINS7gQIU3e1jytS7c/aiSc5iOve+32yyEKNKDxQYDW1X5lmpRKPJHaDMoNN3n/E3MRsju74PBIfThIOSqGABzCGRRQ4tIUxHi6oxT0W05T0/d+VxhnD2htpMd/oUcre7mKR/QztjdWQQ0HqoupzpBxb58+2gdsodcgxhmhebJEh7JAWHW6EOrYnWlK4sOkB5epgdFLLNFsFU2w+jI47wtRxjH7pMbmao0rfHDg9nTQCGhgfW66IM+SQ2a+3hnsFhg/U7iL6Bk5ug+/6ip+S0t37GjQR20BcOA6+aWYr
+localhost ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3bGY002V+XFVfKugmO0rpwhqnpSBkpqgUD+y3zQ4Ppd+iqD0MgSuQpnLFL3Jcu5xK5+Z+IN8nDY8wK2sQ5F0ArjFk/iP5HW0sBzy8eorsl0EXq3aJPO6wpO0NKFV8ZPGSF0TMJjeyKpOZN2L+lX3thv/X32v2L2GhZymIi0SU7fS0aMxnV2cEV7B7ChhVWvmmeLRyfq9eZO5QtNzWqp1HcBsbdW0y9bnKWwN3OXm6qYk6TdD0ml1r/gxfVxgiFwrh60cnnDF3fEFeD3qqozxW/MsgXcaPWdqdc+mZJrbNbP4TBdfy7t+ZSEL4NFpiyTSuodIlORf+843rhf9qO9IR
 +mkdir -p build/reports
 +./gradlew -i -s -p acceptance-test test aggressiveTest
 Starting Build
@@ -71,23 +71,23 @@ Tasks to be executed: [task ':executeCommand', task ':executeCommandByRole', tas
 :executeCommand
 Executing task ':executeCommand' (up-to-date check took 0.001 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 2915 + 5426) with options ([:])
+Execute a command (expr 7517 + 8140) with options ([:])
 Channel #0 has been opened
-8341
+15657
 Channel #0 has been closed with exit status 0
-:executeCommand (Thread[main,5,main]) completed. Took 1.229 secs.
+:executeCommand (Thread[main,5,main]) completed. Took 1.442 secs.
 :executeCommandByRole (Thread[main,5,main]) started.
 :executeCommandByRole
 Executing task ':executeCommandByRole' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 3903 + 4612) with options ([:])
+Execute a command (expr 5693 + 7351) with options ([:])
 Channel #1 has been opened
-8515
+13044
 Channel #1 has been closed with exit status 0
 :executeCommandByRole (Thread[main,5,main]) completed. Took 0.318 secs.
 :executeCommandWithPty (Thread[main,5,main]) started.
 :executeCommandWithPty
-Executing task ':executeCommandWithPty' (up-to-date check took 0.001 secs) due to:
+Executing task ':executeCommandWithPty' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
 Execute a command (env | grep -v SSH_TTY) in background
 Channel #2 has been opened
@@ -96,8 +96,8 @@ Channel #3 has been opened
 Execute a command (env | grep -v SSH_TTY) with options ([:])
 Channel #4 has been opened
 SHELL=/bin/bash
-XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392371486.316985-17132669
-SSH_CLIENT=127.0.0.1 51386 22
+XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392384057.124509-2134913651
+SSH_CLIENT=127.0.0.1 43220 22
 LC_ALL=en_US.UTF-8
 USER=travis
 TRAVIS=true
@@ -112,13 +112,13 @@ HOME=/home/travis
 CI=true
 LOGNAME=travis
 LC_CTYPE=en_US.UTF-8
-SSH_CONNECTION=127.0.0.1 51386 127.0.0.1 22
+SSH_CONNECTION=127.0.0.1 43220 127.0.0.1 22
 DEBIAN_FRONTEND=noninteractive
 _=/usr/bin/env
 SSH_TTY=/dev/pts/1
 SHELL=/bin/bash
-XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392371486.406216-1159321328
-SSH_CLIENT=127.0.0.1 51387 22
+XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392384057.216310-1565637250
+SSH_CLIENT=127.0.0.1 43233 22
 LC_ALL=en_US.UTF-8
 USER=travis
 TRAVIS=true
@@ -133,7 +133,7 @@ HOME=/home/travis
 CI=true
 LOGNAME=travis
 LC_CTYPE=en_US.UTF-8
-SSH_CONNECTION=127.0.0.1 51387 127.0.0.1 22
+SSH_CONNECTION=127.0.0.1 43233 127.0.0.1 22
 DEBIAN_FRONTEND=noninteractive
 _=/usr/bin/env
 Channel #4 has been closed with exit status 0
@@ -143,73 +143,74 @@ SSH_TTY=/dev/pts/1
 Channel #5 has been closed with exit status 0
 Channel #2 has been closed with exit status 0
 Channel #3 has been closed with exit status 0
-:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.705 secs.
+:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.719 secs.
 :executeConcurrently (Thread[main,5,main]) started.
 :executeConcurrently
 Executing task ':executeConcurrently' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sleep 3 && date +%s > /tmp/data-8830) in background
+Execute a command (sleep 3 && date +%s > /tmp/data-3599) in background
 Channel #6 has been opened
-Execute a command (sleep 2 && date +%s > /tmp/data-4306) in background
+Execute a command (sleep 2 && date +%s > /tmp/data-4308) in background
 Channel #7 has been opened
-Execute a command (sleep 1 && date +%s > /tmp/data-2474) in background
+Execute a command (sleep 1 && date +%s > /tmp/data-2419) in background
 Channel #8 has been opened
-Execute a command (date +%s > /tmp/data-1767) in background
+Execute a command (date +%s > /tmp/data-1432) in background
 Channel #9 has been opened
 Channel #9 has been closed with exit status 0
 Channel #8 has been closed with exit status 0
 Channel #7 has been closed with exit status 0
 Channel #6 has been closed with exit status 0
-Execute a command (cat /tmp/data-8830 && rm /tmp/data-8830) with options ([:])
+Execute a command (cat /tmp/data-3599 && rm /tmp/data-3599) with options ([:])
 Channel #10 has been opened
-1392371490
+1392384060
 Channel #10 has been closed with exit status 0
-Execute a command (cat /tmp/data-4306 && rm /tmp/data-4306) with options ([:])
+Execute a command (cat /tmp/data-4308 && rm /tmp/data-4308) with options ([:])
 Channel #11 has been opened
-1392371489
+1392384059
 Channel #11 has been closed with exit status 0
-Execute a command (cat /tmp/data-2474 && rm /tmp/data-2474) with options ([:])
+Execute a command (cat /tmp/data-2419 && rm /tmp/data-2419) with options ([:])
 Channel #12 has been opened
-1392371488
+1392384058
 Channel #12 has been closed with exit status 0
-Execute a command (cat /tmp/data-1767 && rm /tmp/data-1767) with options ([:])
+Execute a command (cat /tmp/data-1432 && rm /tmp/data-1432) with options ([:])
 Channel #13 has been opened
-1392371487
+1392384057
 Channel #13 has been closed with exit status 0
-:executeConcurrently (Thread[main,5,main]) completed. Took 4.252 secs.
+:executeConcurrently (Thread[main,5,main]) completed. Took 4.29 secs.
 :executeSequentially (Thread[main,5,main]) started.
 :executeSequentially
 Executing task ':executeSequentially' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 722 + 1798 > /tmp/data-4774) with options ([:])
+Execute a command (expr 5368 + 532 > /tmp/data-1680) with options ([:])
 Channel #14 has been opened
 Channel #14 has been closed with exit status 0
-Execute a command (expr 722 + `cat /tmp/data-4774` > /tmp/data-7405) with options ([:])
+Execute a command (expr 5368 + `cat /tmp/data-1680` > /tmp/data-5418) with options ([:])
 Channel #15 has been opened
 Channel #15 has been closed with exit status 0
-Execute a command (cat /tmp/data-4774 && rm /tmp/data-4774) with options ([:])
+Execute a command (cat /tmp/data-1680 && rm /tmp/data-1680) with options ([:])
 Channel #16 has been opened
-2520
+5900
 Channel #16 has been closed with exit status 0
-Execute a command (cat /tmp/data-7405 && rm /tmp/data-7405) with options ([:])
+Execute a command (cat /tmp/data-5418 && rm /tmp/data-5418) with options ([:])
 Channel #17 has been opened
-3242
+11268
 Channel #17 has been closed with exit status 0
-:executeSequentially (Thread[main,5,main]) completed. Took 0.922 secs.
+:executeSequentially (Thread[main,5,main]) completed. Took 0.934 secs.
 :executeShell (Thread[main,5,main]) started.
 :executeShell
 Executing task ':executeShell' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
 Execute a shell with options ([:])
 Channel #18 has been opened
-Last login: Fri Feb 14 09:51:26 2014 from localhost.localdomain
+Last login: Fri Feb 14 13:20:57 2014 from localhost.localdomain
 
-travis@testing-worker-linux-2-1-30227-linux-11-18867842:~$ 
+travis@testing-worker-linux-5-2-31907-linux-2-18878157:~$ 
 exit 0
 
 logout
+exit 0
 Channel #18 has been closed with exit status 0
-:executeShell (Thread[main,5,main]) completed. Took 0.759 secs.
+:executeShell (Thread[main,5,main]) completed. Took 0.915 secs.
 :failureStatus (Thread[main,5,main]) started.
 :failureStatus
 Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
@@ -217,7 +218,7 @@ Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
 Execute a command (exit 1) with options ([:])
 Channel #19 has been opened
 Channel #19 has been closed with exit status 1
-:failureStatus (Thread[main,5,main]) completed. Took 0.314 secs.
+:failureStatus (Thread[main,5,main]) completed. Took 0.343 secs.
 :failureStatusInBackground (Thread[main,5,main]) started.
 :failureStatusInBackground
 Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due to:
@@ -225,30 +226,30 @@ Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due
 Execute a command (exit 1) in background
 Channel #20 has been opened
 Channel #20 has been closed with exit status 1
-:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.301 secs.
+:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.316 secs.
 :putAndGetFiles (Thread[main,5,main]) started.
 :putAndGetFiles
 Executing task ':putAndGetFiles' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/X) to remote (/tmp/data-6876)
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/X) to remote (/tmp/data-3738)
 Channel #21 has been opened
 Channel #21 has been closed with exit status -1
-Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/Y) to remote (/tmp/data-2261)
+Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/Y) to remote (/tmp/data-4319)
 Channel #22 has been opened
 Channel #22 has been closed with exit status -1
-Execute a command (expr `cat /tmp/data-6876` + `cat /tmp/data-2261` > /tmp/data-1218) with options ([:])
+Execute a command (expr `cat /tmp/data-3738` + `cat /tmp/data-4319` > /tmp/data-4444) with options ([:])
 Channel #23 has been opened
 Channel #23 has been closed with exit status 0
-Execute a command (expr `cat /tmp/data-6876` - `cat /tmp/data-2261` > /tmp/data-9395) with options ([:])
+Execute a command (expr `cat /tmp/data-3738` - `cat /tmp/data-4319` > /tmp/data-7075) with options ([:])
 Channel #24 has been opened
 Channel #24 has been closed with exit status 0
-Get a remote file (/tmp/data-1218) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/A)
+Get a remote file (/tmp/data-4444) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/A)
 Channel #25 has been opened
 Channel #25 has been closed with exit status -1
-Get a remote file (/tmp/data-9395) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/B)
+Get a remote file (/tmp/data-7075) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/B)
 Channel #26 has been opened
 Channel #26 has been closed with exit status -1
-:putAndGetFiles (Thread[main,5,main]) completed. Took 0.616 secs.
+:putAndGetFiles (Thread[main,5,main]) completed. Took 0.625 secs.
 :testEnvironmentOfCommand (Thread[main,5,main]) started.
 :testEnvironmentOfCommand
 Executing task ':testEnvironmentOfCommand' (up-to-date check took 0.0 secs) due to:
@@ -260,142 +261,142 @@ Execute a command (echo "testdata is $testdata") with options ([:])
 Channel #28 has been opened
 testdata is 
 Channel #28 has been closed with exit status 0
-:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.502 secs.
+:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.509 secs.
 :test (Thread[main,5,main]) started.
 :test
 Skipping task ':test' as it has no actions.
-:test (Thread[main,5,main]) completed. Took 0.002 secs.
+:test (Thread[main,5,main]) completed. Took 0.003 secs.
 :createUserForSudoNoPassword (Thread[main,5,main]) started.
 :createUserForSudoNoPassword
 Executing task ':createUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo useradd -m user1138n) with options ([:])
+Execute a command (sudo useradd -m user3153n) with options ([:])
 Channel #29 has been opened
 Channel #29 has been closed with exit status 0
-Execute a command (sudo passwd user1138n) with options ([:])
+Execute a command (sudo passwd user3153n) with options ([:])
 Channel #30 has been opened
 Enter new UNIX password: 
 Retype new UNIX password: 
 passwd: password updated successfully
 Channel #30 has been closed with exit status 0
-Execute a command (echo 'user1138n ALL=(ALL) NOPASSWD: ALL' > /tmp/user1138n) with options ([:])
+Execute a command (echo 'user3153n ALL=(ALL) NOPASSWD: ALL' > /tmp/user3153n) with options ([:])
 Channel #31 has been opened
 Channel #31 has been closed with exit status 0
-Execute a command (sudo chmod 440 /tmp/user1138n) with options ([:])
+Execute a command (sudo chmod 440 /tmp/user3153n) with options ([:])
 Channel #32 has been opened
 Channel #32 has been closed with exit status 0
-Execute a command (sudo chown 0.0 /tmp/user1138n) with options ([:])
+Execute a command (sudo chown 0.0 /tmp/user3153n) with options ([:])
 Channel #33 has been opened
 Channel #33 has been closed with exit status 0
-Execute a command (sudo mv /tmp/user1138n /etc/sudoers.d) with options ([:])
+Execute a command (sudo mv /tmp/user3153n /etc/sudoers.d) with options ([:])
 Channel #34 has been opened
 Channel #34 has been closed with exit status 0
-:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 1.322 secs.
+:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 1.338 secs.
 :executeSudoNoPassword (Thread[main,5,main]) started.
 :executeSudoNoPassword
 Executing task ':executeSudoNoPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
 Execute a command (whoami) with sudo support and options ([pty:true])
-Execute a command (sudo -S -p 'b98b186f-8c9d-4ded-ba71-d898546506e9' whoami) with options ([pty:true])
+Execute a command (sudo -S -p 'dcc8043f-7221-44ca-ba75-664b457d09df' whoami) with options ([pty:true])
 Channel #35 has been opened
 root
 Channel #35 has been closed with exit status 0
-:executeSudoNoPassword (Thread[main,5,main]) completed. Took 0.295 secs.
+:executeSudoNoPassword (Thread[main,5,main]) completed. Took 0.309 secs.
 :deleteUserForSudoNoPassword (Thread[main,5,main]) started.
 :deleteUserForSudoNoPassword
 Executing task ':deleteUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo rm -v /etc/sudoers.d/user1138n) with options ([:])
+Execute a command (sudo rm -v /etc/sudoers.d/user3153n) with options ([:])
 Channel #36 has been opened
-removed `/etc/sudoers.d/user1138n'
+removed `/etc/sudoers.d/user3153n'
 Channel #36 has been closed with exit status 0
-Execute a command (sudo userdel -r user1138n) with options ([:])
+Execute a command (sudo userdel -r user3153n) with options ([:])
 Channel #37 has been opened
 Channel #37 has been closed with exit status 0
-:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.612 secs.
+:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.633 secs.
 :createUserForSudoWithPassword (Thread[main,5,main]) started.
 :createUserForSudoWithPassword
 Executing task ':createUserForSudoWithPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo useradd -m user9913p) with options ([:])
+Execute a command (sudo useradd -m user796p) with options ([:])
 Channel #38 has been opened
 Channel #38 has been closed with exit status 0
-Execute a command (sudo passwd user9913p) with options ([:])
+Execute a command (sudo passwd user796p) with options ([:])
 Channel #39 has been opened
 Enter new UNIX password: 
 Retype new UNIX password: 
 passwd: password updated successfully
 Channel #39 has been closed with exit status 0
-Execute a command (echo 'user9913p ALL=(ALL) ALL' > /tmp/user9913p) with options ([:])
+Execute a command (echo 'user796p ALL=(ALL) ALL' > /tmp/user796p) with options ([:])
 Channel #40 has been opened
 Channel #40 has been closed with exit status 0
-Execute a command (sudo chmod 440 /tmp/user9913p) with options ([:])
+Execute a command (sudo chmod 440 /tmp/user796p) with options ([:])
 Channel #41 has been opened
 Channel #41 has been closed with exit status 0
-Execute a command (sudo chown 0.0 /tmp/user9913p) with options ([:])
+Execute a command (sudo chown 0.0 /tmp/user796p) with options ([:])
 Channel #42 has been opened
 Channel #42 has been closed with exit status 0
-Execute a command (sudo mv /tmp/user9913p /etc/sudoers.d) with options ([:])
+Execute a command (sudo mv /tmp/user796p /etc/sudoers.d) with options ([:])
 Channel #43 has been opened
 Channel #43 has been closed with exit status 0
-:createUserForSudoWithPassword (Thread[main,5,main]) completed. Took 1.324 secs.
+:createUserForSudoWithPassword (Thread[main,5,main]) completed. Took 1.343 secs.
 :executeSudoWithPassword (Thread[main,5,main]) started.
 :executeSudoWithPassword
 Executing task ':executeSudoWithPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
 Execute a command (whoami) with sudo support and options ([pty:true])
-Execute a command (sudo -S -p '8fdd96a0-2e63-4148-8489-d9aa0434cbfd' whoami) with options ([pty:true])
+Execute a command (sudo -S -p 'bf83ee30-5d2a-4273-92b4-6d0b2fe9c0de' whoami) with options ([pty:true])
 Channel #44 has been opened
 Sending password for sudo authentication on channel #44
-8fdd96a0-2e63-4148-8489-d9aa0434cbfd
+bf83ee30-5d2a-4273-92b4-6d0b2fe9c0de
 
 root
 Channel #44 has been closed with exit status 0
-:executeSudoWithPassword (Thread[main,5,main]) completed. Took 0.269 secs.
+:executeSudoWithPassword (Thread[main,5,main]) completed. Took 0.427 secs.
 :deleteUserForSudoWithPassword (Thread[main,5,main]) started.
 :deleteUserForSudoWithPassword
 Executing task ':deleteUserForSudoWithPassword' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo rm -v /etc/sudoers.d/user9913p) with options ([:])
+Execute a command (sudo rm -v /etc/sudoers.d/user796p) with options ([:])
 Channel #45 has been opened
-removed `/etc/sudoers.d/user9913p'
+removed `/etc/sudoers.d/user796p'
 Channel #45 has been closed with exit status 0
-Execute a command (sudo userdel -r user9913p) with options ([:])
+Execute a command (sudo userdel -r user796p) with options ([:])
 Channel #46 has been opened
 Channel #46 has been closed with exit status 0
-:deleteUserForSudoWithPassword (Thread[main,5,main]) completed. Took 0.502 secs.
+:deleteUserForSudoWithPassword (Thread[main,5,main]) completed. Took 0.509 secs.
 :createUserWithAuthorizedKey (Thread[main,5,main]) started.
 :createUserWithAuthorizedKey
 Executing task ':createUserWithAuthorizedKey' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo useradd -m user2130n) with options ([:])
+Execute a command (sudo useradd -m user321n) with options ([:])
 Channel #47 has been opened
 Channel #47 has been closed with exit status 0
-Execute a command (sudo -u user2130n mkdir ~user2130n/.ssh) with options ([:])
+Execute a command (sudo -u user321n mkdir ~user321n/.ssh) with options ([:])
 Channel #48 has been opened
 Channel #48 has been closed with exit status 0
-Execute a command (sudo -u user2130n tee ~user2130n/.ssh/authorized_keys < ~/.ssh/id_rsa_pass.pub) with options ([:])
+Execute a command (sudo -u user321n tee ~user321n/.ssh/authorized_keys < ~/.ssh/id_rsa_pass.pub) with options ([:])
 Channel #49 has been opened
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDN7ZfGoYuRFHf55HD6KM/RvhmQbXePN+d5MrObBL2GshBkoFP7F8U8DMC7b0FItQG/UXLWvXzIGVJ2Vd+PPt/cmrkWg1i3zuIzQ3tJw65ilCqkdcV7ImTA99hfsgu/rQFIY+ofPmA206sUXGDFfg+zWoHix7azCGtj10Y4AOkeIuryfTOMPaY1/g4N7FwRA9AC0rZjJQ9kfcgpwzY7FqX+ziZ2hIu4hWDWg62ZRNPb0ZiEHKfuFh8Olh/78z0xL3Y8zBeeJdm+mH8r76zFD0smEOw9ndkAkZtYdlPDfzuQWHiZUfSrS9VyvvcgjC9+yO68FploBaxMb86pWohI2R8F 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2SllpejX1JNrSovGl6m3FVmp/BanQo9VTnMau4C0PKTfuFrXzeGx5bWlBiPM46Ci8uGGjmekZs9G/r9POmDVKEZPJfboOq8qlFbnyptRHaOfoTN9QH5W8xOEmhbs+1Bhisvo7W31jfAT/2MT/cxZMo73n8t5a5Haztkcz7AINu4UiWnIHsz0NhiQ9CvreliafF8t2trqygG22pDBr0fp3UFgEQw665t/g5uTMpVPJEbr1dh4Wp4yMfObcps+PWlWSxh/OzlZteLCjZ/gNekcaehCtmz5EqqXA/bgmxYjDpFOk5z28KItWX0J1hqNR2Xb7KRRTYeGuftWhIjzw6uG7 
 Channel #49 has been closed with exit status 0
-:createUserWithAuthorizedKey (Thread[main,5,main]) completed. Took 0.699 secs.
+:createUserWithAuthorizedKey (Thread[main,5,main]) completed. Took 0.721 secs.
 :useRemoteSpecificIdentity (Thread[main,5,main]) started.
 :useRemoteSpecificIdentity
 Executing task ':useRemoteSpecificIdentity' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
 Execute a command (whoami) with options ([:])
 Channel #50 has been opened
-user2130n
+user321n
 Channel #50 has been closed with exit status 0
-:useRemoteSpecificIdentity (Thread[main,5,main]) completed. Took 0.298 secs.
+:useRemoteSpecificIdentity (Thread[main,5,main]) completed. Took 0.32 secs.
 :deleteUserWithAuthorizedKey (Thread[main,5,main]) started.
 :deleteUserWithAuthorizedKey
 Executing task ':deleteUserWithAuthorizedKey' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sudo userdel -r user2130n) with options ([:])
+Execute a command (sudo userdel -r user321n) with options ([:])
 Channel #51 has been opened
 Channel #51 has been closed with exit status 0
-:deleteUserWithAuthorizedKey (Thread[main,5,main]) completed. Took 0.296 secs.
+:deleteUserWithAuthorizedKey (Thread[main,5,main]) completed. Took 0.309 secs.
 :aggressiveTest (Thread[main,5,main]) started.
 :aggressiveTest
 Skipping task ':aggressiveTest' as it has no actions.
@@ -403,4 +404,4 @@ Skipping task ':aggressiveTest' as it has no actions.
 
 BUILD SUCCESSFUL
 
-Total time: 27.494 secs
+Total time: 30.727 secs
