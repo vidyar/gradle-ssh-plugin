@@ -34,7 +34,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.147s</div>
+<div class="counter">0.182s</div>
 <p>duration</p>
 </div>
 </td>
@@ -77,12 +77,12 @@
 </tr>
 <tr>
 <td class="success">add configuration params</td>
-<td>0.004s</td>
+<td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">add session</td>
-<td>0.005s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@
 </tr>
 <tr>
 <td class="success">add session for multiple remotes with illegal args throws assertion error</td>
-<td>0.003s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -107,7 +107,7 @@
 </tr>
 <tr>
 <td class="success">add session with remote: myRemote, user: null, host: www.myhost.com</td>
-<td>0.002s</td>
+<td>0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td class="success">compute merged adheres to priority order</td>
-<td>0.060s</td>
+<td>0.055s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -137,37 +137,37 @@
 </tr>
 <tr>
 <td class="success">compute merged identity in order (identityA pA, identityB null)</td>
-<td>0.004s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">compute merged identity in order (identityA pA, identityB pB)</td>
-<td>0.004s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">compute merged identity in order (identityA pA, null null)</td>
-<td>0.008s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">compute merged identity in order (null null, identityA null)</td>
-<td>0.005s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">compute merged identity in order (null null, identityA pA)</td>
 <td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">compute merged identity in order (null null, identityA pA)</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">compute merged identity in order (null null, null null)</td>
-<td>0.008s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">compute merged on one spec is a clone</td>
-<td>0.013s</td>
+<td>0.049s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -175,35 +175,35 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>04:42:35.860 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.914 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.925 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.970 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.988 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.990 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.997 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:35.998 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.003 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.006 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.012 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.013 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.018 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.019 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.026 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.027 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.032 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.034 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.038 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.039 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.043 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
-04:42:36.044 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+<pre>07:49:20.939 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:20.982 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.025 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.066 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.083 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.086 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.092 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.093 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.097 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.100 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.106 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.108 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.112 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.114 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.118 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.119 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.124 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.126 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.130 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.131 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.135 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
+07:49:21.136 [Test worker] WARN  org.hidetake.gradle.ssh.api.SshSpec - Deprecated: config() in ssh closure will be removed in v0.3.0
 </pre>
 </span>
 </div>
 </div>
 <div id="footer">
 <p>Generated by 
-<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 13, 2014 4:44:30 AM</p>
+<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 14, 2014 7:50:18 AM</p>
 </div>
 </div>
 </body>
