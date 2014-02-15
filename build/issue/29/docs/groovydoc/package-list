@@ -1,0 +1,6 @@
+org.hidetake.gradle.ssh
+org.hidetake.gradle.ssh.api
+org.hidetake.gradle.ssh.api.command
+org.hidetake.gradle.ssh.api.operation
+org.hidetake.gradle.ssh.internal
+org.hidetake.gradle.ssh.internal.command

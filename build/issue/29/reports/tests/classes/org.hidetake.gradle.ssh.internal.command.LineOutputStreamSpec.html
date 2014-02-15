@@ -1,0 +1,405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class org.hidetake.gradle.ssh.internal.command.LineOutputStreamSpec</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.hidetake.gradle.ssh.internal.command.LineOutputStreamSpec</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.hidetake.gradle.ssh.internal.command.html">org.hidetake.gradle.ssh.internal.command</a> &gt; LineOutputStreamSpec</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">50</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.339s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">explicit charset</td>
+<td>0.029s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush in the middle of line, 1 times</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush in the middle of line, 1 times, partial matched</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush in the middle of line, 2 times</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush in the middle of line, 2 times, partial matched</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush in the middle of line, 3 times</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush in the middle of line, 3 times, partial matched</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush or close has no effect if empty, flush 0, close 1</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush or close has no effect if empty, flush 0, close 2</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush or close has no effect if empty, flush 1, close 0</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush or close has no effect if empty, flush 1, close 1</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush or close has no effect if empty, flush 2, close 0</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">flush or close has no effect if empty, flush 2, close 1</td>
+<td>0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">heading new-line characters should be blank, 1 new-line characters</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">heading new-line characters should be blank, 2 new-line characters</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">heading new-line characters should be blank, 3 new-line characters</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when closed 1</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when closed 2</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when flushed 1 and closed 1</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when flushed 1 and closed 1, partial matched</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when flushed 1 and closed 2</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when flushed 1 and closed 2, partial matched</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when flushed 2 and closed 1</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called on each lines when flushed 2 and closed 1, partial matched</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, closed 1</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, closed 2</td>
+<td>0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, flushed 1 and closed 1</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, flushed 1 and closed 1, partial matched</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, flushed 1 and closed 2</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, flushed 1 and closed 2, partial matched</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, flushed 2 and closed 1</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a byte, flushed 2 and closed 1, partial matched</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, closed 1</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, closed 2</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, flushed 1 and closed 1</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, flushed 1 and closed 1, partial matched</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, flushed 1 and closed 2</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, flushed 1 and closed 2, partial matched</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, flushed 2 and closed 1</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">listener should be called when received a string, flushed 2 and closed 1, partial matched</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">new-line character for multi-platforms</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">new-line characters should be blank, 1 new-line characters</td>
+<td>0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">new-line characters should be blank, 2 new-line characters</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">new-line characters should be blank, 3 new-line characters</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">only last new-line character should be ignored, 1 new-line characters</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">only last new-line character should be ignored, 2 new-line characters</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">only last new-line character should be ignored, 3 new-line characters</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">specification of repeat()</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">with a writer</td>
+<td>0.008s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">with left shift operator</td>
+<td>0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:54:14.574 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '#'
+14:54:14.575 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.580 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '#'
+14:54:14.581 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.584 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '#'
+14:54:14.584 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.590 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '#'
+14:54:14.591 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.596 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '#'
+14:54:14.597 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.600 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '#'
+14:54:14.600 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.619 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'single line'
+14:54:14.619 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.626 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'single line'
+14:54:14.626 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.630 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'single line'
+14:54:14.631 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.639 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'single line'
+14:54:14.639 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.646 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'single line'
+14:54:14.646 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.650 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'single line'
+14:54:14.651 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.678 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.679 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.687 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.687 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.693 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.693 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.705 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.706 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.714 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.714 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.721 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.721 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.728 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'lin'
+14:54:14.729 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.734 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'li'
+14:54:14.734 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.740 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'lin'
+14:54:14.740 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.742 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'li'
+14:54:14.743 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.747 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'lin'
+14:54:14.747 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.749 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'li'
+14:54:14.750 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.757 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'lin'
+14:54:14.758 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.763 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'li'
+14:54:14.764 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.770 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'lin'
+14:54:14.770 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.772 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'li'
+14:54:14.773 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.776 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'lin'
+14:54:14.777 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Partial match hit. Line buffer cleared.
+14:54:14.780 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'li'
+14:54:14.780 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.787 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.788 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.796 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.797 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.811 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for 'line5'
+14:54:14.812 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+14:54:14.842 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - Trying partial match for '日本語です'
+14:54:14.842 [Test worker] DEBUG o.h.g.s.i.command.LineOutputStream - No partial match hit.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 1.10</a> at Feb 15, 2014 2:54:15 PM</p>
+</div>
+</div>
+</body>
