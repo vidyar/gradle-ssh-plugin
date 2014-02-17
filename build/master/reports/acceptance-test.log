@@ -3,17 +3,17 @@ Generating public/private rsa key pair.
 Your identification has been saved in /home/travis/.ssh/id_rsa.
 Your public key has been saved in /home/travis/.ssh/id_rsa.pub.
 The key fingerprint is:
-ed:0c:c9:67:d1:ca:47:b7:2f:41:6d:20:48:30:68:28 
+0a:84:32:62:b6:05:39:6b:14:8c:77:6a:20:c0:a4:a5 
 The key's randomart image is:
 +--[ RSA 2048]----+
-|     . .oo... .  |
-|  E . o  ... . o |
-|   . .    . o o o|
-|       . + + o o |
-|        S * . o  |
-|         * .   o |
-|          o   . .|
-|               . |
+|B++              |
+|=Oo..            |
+|E=++.            |
+|+==.             |
+|.o  .   S        |
+|     . .         |
+|      .          |
+|                 |
 |                 |
 +-----------------+
 +ssh-keygen -t rsa -N pass_phrase -C '' -f /home/travis/.ssh/id_rsa_pass
@@ -21,25 +21,25 @@ Generating public/private rsa key pair.
 Your identification has been saved in /home/travis/.ssh/id_rsa_pass.
 Your public key has been saved in /home/travis/.ssh/id_rsa_pass.pub.
 The key fingerprint is:
-83:4d:84:21:e7:d1:71:fb:4b:e4:c9:7c:c6:5f:13:6e 
+50:74:ee:22:d6:30:83:0c:e3:8f:ce:28:49:7f:93:10 
 The key's randomart image is:
 +--[ RSA 2048]----+
-|    . ++o..      |
-|     +.o.. .     |
-|      . . . .  . |
-|       +   * o. .|
-|      . S   B +E.|
-|         . . +..o|
-|            .   .|
-|                 |
+|  o    .o .      |
+| . + . . o       |
+|  .Eo =   .      |
+|   o.  * .       |
+| .... o S .      |
+|.=. .... .       |
+|+ o. +           |
+|.   . .          |
 |                 |
 +-----------------+
 +tee -a /home/travis/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcHvnHbCYsokMB3qOowzMJTDTGv7/TgZCz9WMaz1mnvIqwjw462VNsAVTLJwvgYuCO7HBSwGlvGJQcJALTh2KQhYMotuuOpZ8it75kYJKSRnwKFvFY4FhZ9ZroU3oK8550sS65OHFrHqBmYg5nYwjr/lPVURZyqgUWNYan3LN9a+gPh4siMb/v1/8kGNqoF+yEySvPuGhcI2pbDhd3aA4T4ghX78IMZ1iYodSb2L9ghXsu+8SrKv+7xYplxTS7sxTi2EZ4QUuuhVnPMdJ5DypqVvi5tZUdpek5A+aza/mO7HnjTsB8ar9ZqJ+Qk2lWBL0qYzNNtXs9SYYHM2gmVAaR 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWuxymq1QpCBrou4Lz0dShrPD6DDhJltgY+W5ijFdTycGZks4/KKmfPInc80Oua4A1hG00+NpZpEQSz9ym52v/dniN3M2wDpG4hEFv246FBsgDR0waj573kkLRs82UxWAri4TjASlhxWTLpCvxvQz2WMW9XJ66jqsWOq5ZMSEtXXlTCWSTSHcts52eZZ5CWLD/qEGOWeItVwr34yAtq8yqXsyA7sgJ8ZBVoiXJ48w0qczdrGJHekqHVOcaGAkgqIjXz4wau4I2WLOd0yT9sxLsy57qGMKDIqtXUSwZeD6reTy3DjW6V9XzmZW3ZB4U959SmBvfwZlodqcEWTaTenjf 
 +ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/home/travis/.ssh/known_hosts -o HashKnownHosts=no -o HostKeyAlgorithms=ssh-rsa -i /home/travis/.ssh/id_rsa localhost true
 Warning: Permanently added 'localhost' (RSA) to the list of known hosts.
 +grep localhost /home/travis/.ssh/known_hosts
-localhost ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCVuzWMw6Ji6eB1dDObbRaBJrcA/nLAR9y6xgn0d5bLaIGsnRsphY3bQxPZLQicvOCbAjscI1bsw0bPWez7AvOPOF7T++mMAgVyVKS4ZDigPaMV3DbtQJ8XCKV6X42gybuz/Ukb64duyZ9sA1U8rOWsTTVPm4xUA77Adhv3viR0UHMvSbxjX1wZXTJBZt3BJA2s8kuojWrNDInSFXw8uNS0BWvBGtMRywdhzsn3qoOyQJH+Z+bpLsW/2IBJV5skJ0aRUO+h7AUxw/kwhpk40tOjUL6pRkkDR6xPr8Z45Ci5palIuNXxxgCgUR6WKhSmRx4NT9AKqZ6aohHGjYeWf1Ct
+localhost ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDETU/oCF8puHnKQuaBPFNGLdpW8RItsDbBxeDEwifc/Vbwk0lzoJsbchLP4f+0D1xcDZux7tqFdVM/czU529EstF4rQhC0ae1SeEulQWeu1UoLiSp1aeNfmD5X2FGOkXEHH8xormSfDeq9UMd1udJLL9N29iocYSGQQ2dKYf3jVnpYq+RFuEP0dsq6v9gqYkoSqCYuuVzaChlO47A3eRMJJHfA9F+kHcFOWmlsi8eLf4oPi8rU6MCFmhBiaGfKU1zUImCchsJzkymS+o7WN08uC/NDvh9kseJqopds7z50sEyeonLQaoJxNWjFI0HoLt5jgHbbdm7IXUJNXGEuil85
 +mkdir -p build/reports
 +./gradlew -i -s -p acceptance-test test aggressiveTest
 Starting Build
@@ -69,22 +69,22 @@ Selected primary tasks 'test', 'aggressiveTest'
 Tasks to be executed: [task ':executeCommand', task ':executeCommandByRole', task ':executeCommandWithPty', task ':executeConcurrently', task ':executeSequentially', task ':executeShell', task ':failureStatus', task ':failureStatusInBackground', task ':setupBuildDir', task ':putAndGetFiles', task ':testEnvironmentOfCommand', task ':test', task ':createUserForSudoNoPassword', task ':executeSudoNoPassword', task ':deleteUserForSudoNoPassword', task ':createUserForSudoWithPassword', task ':executeSudoWithPassword', task ':deleteUserForSudoWithPassword', task ':createUserWithAuthorizedKey', task ':useRemoteSpecificIdentity', task ':deleteUserWithAuthorizedKey', task ':aggressiveTest']
 :executeCommand (Thread[main,5,main]) started.
 :executeCommand
-Executing task ':executeCommand' (up-to-date check took 0.001 secs) due to:
+Executing task ':executeCommand' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 9769 + 6058) with options ([:])
+Execute a command (expr 8332 + 2205) with options ([:])
 Channel #0 has been opened
-15827
+10537
 Channel #0 has been closed with exit status 0
-:executeCommand (Thread[main,5,main]) completed. Took 1.369 secs.
+:executeCommand (Thread[main,5,main]) completed. Took 1.208 secs.
 :executeCommandByRole (Thread[main,5,main]) started.
 :executeCommandByRole
-Executing task ':executeCommandByRole' (up-to-date check took 0.0 secs) due to:
+Executing task ':executeCommandByRole' (up-to-date check took 0.001 secs) due to:
   Task has not declared any outputs.
-Execute a command (expr 859 + 3866) with options ([:])
+Execute a command (expr 3091 + 9402) with options ([:])
 Channel #1 has been opened
-4725
+12493
 Channel #1 has been closed with exit status 0
-:executeCommandByRole (Thread[main,5,main]) completed. Took 0.314 secs.
+:executeCommandByRole (Thread[main,5,main]) completed. Took 0.328 secs.
 :executeCommandWithPty (Thread[main,5,main]) started.
 :executeCommandWithPty
 Executing task ':executeCommandWithPty' (up-to-date check took 0.0 secs) due to:
@@ -96,8 +96,8 @@ Channel #3 has been opened
 Execute a command (env | grep -v SSH_TTY) with options ([:])
 Channel #4 has been opened
 SHELL=/bin/bash
-XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392558706.322016-1249285666
-SSH_CLIENT=127.0.0.1 55343 22
+XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392640294.78274-646420273
+SSH_CLIENT=127.0.0.1 53849 22
 LC_ALL=en_US.UTF-8
 USER=travis
 TRAVIS=true
@@ -112,13 +112,14 @@ HOME=/home/travis
 CI=true
 LOGNAME=travis
 LC_CTYPE=en_US.UTF-8
-SSH_CONNECTION=127.0.0.1 55343 127.0.0.1 22
+SSH_CONNECTION=127.0.0.1 53849 127.0.0.1 22
 DEBIAN_FRONTEND=noninteractive
-SHELL=/bin/bash
 _=/usr/bin/env
-XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392558706.413298-1631129997
-SSH_CLIENT=127.0.0.1 55346 22
+SHELL=/bin/bash
+XDG_SESSION_COOKIE=399ba1be7f4982914a3794ad000007da-1392640294.170622-2016655108
+SSH_CLIENT=127.0.0.1 53850 22
 LC_ALL=en_US.UTF-8
+SSH_TTY=/dev/pts/1
 USER=travis
 TRAVIS=true
 MAIL=/var/mail/travis
@@ -126,14 +127,13 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 PWD=/home/travis
 CONTINUOUS_INTEGRATION=true 
 JAVA_HOME=/usr/lib/jvm/java-7-oracle
-SSH_TTY=/dev/pts/1
 LANG=en_US.UTF-8
 SHLVL=1
 HOME=/home/travis
 CI=true
 LOGNAME=travis
 LC_CTYPE=en_US.UTF-8
-SSH_CONNECTION=127.0.0.1 55346 127.0.0.1 22
+SSH_CONNECTION=127.0.0.1 53850 127.0.0.1 22
 DEBIAN_FRONTEND=noninteractive
 _=/usr/bin/env
 Channel #4 has been closed with exit status 0
@@ -143,276 +143,135 @@ SSH_TTY=/dev/pts/1
 Channel #5 has been closed with exit status 0
 Channel #2 has been closed with exit status 0
 Channel #3 has been closed with exit status 0
-:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.714 secs.
+:executeCommandWithPty (Thread[main,5,main]) completed. Took 0.728 secs.
 :executeConcurrently (Thread[main,5,main]) started.
 :executeConcurrently
 Executing task ':executeConcurrently' (up-to-date check took 0.0 secs) due to:
   Task has not declared any outputs.
-Execute a command (sleep 3 && date +%s > /tmp/data-7339) in background
+Execute a command (sleep 3 && date +%s > /tmp/data-8020) in background
 Channel #6 has been opened
-Execute a command (sleep 2 && date +%s > /tmp/data-770) in background
+Execute a command (sleep 2 && date +%s > /tmp/data-1008) in background
 Channel #7 has been opened
-Execute a command (sleep 1 && date +%s > /tmp/data-6692) in background
+Execute a command (sleep 1 && date +%s > /tmp/data-18) in background
 Channel #8 has been opened
-Execute a command (date +%s > /tmp/data-8896) in background
+Execute a command (date +%s > /tmp/data-5788) in background
 Channel #9 has been opened
 Channel #9 has been closed with exit status 0
 Channel #8 has been closed with exit status 0
 Channel #7 has been closed with exit status 0
 Channel #6 has been closed with exit status 0
-Execute a command (cat /tmp/data-7339 && rm /tmp/data-7339) with options ([:])
+Execute a command (cat /tmp/data-8020 && rm /tmp/data-8020) with options ([:])
 Channel #10 has been opened
-1392558710
+1392640297
 Channel #10 has been closed with exit status 0
-Execute a command (cat /tmp/data-770 && rm /tmp/data-770) with options ([:])
+Execute a command (cat /tmp/data-1008 && rm /tmp/data-1008) with options ([:])
 Channel #11 has been opened
-1392558709
+1392640296
 Channel #11 has been closed with exit status 0
-Execute a command (cat /tmp/data-6692 && rm /tmp/data-6692) with options ([:])
+Execute a command (cat /tmp/data-18 && rm /tmp/data-18) with options ([:])
 Channel #12 has been opened
-1392558708
+1392640295
 Channel #12 has been closed with exit status 0
-Execute a command (cat /tmp/data-8896 && rm /tmp/data-8896) with options ([:])
+Execute a command (cat /tmp/data-5788 && rm /tmp/data-5788) with options ([:])
 Channel #13 has been opened
-1392558707
+1392640295
 Channel #13 has been closed with exit status 0
-:executeConcurrently (Thread[main,5,main]) completed. Took 4.28 secs.
-:executeSequentially (Thread[main,5,main]) started.
-:executeSequentially
-Executing task ':executeSequentially' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (expr 4692 + 2101 > /tmp/data-2356) with options ([:])
-Channel #14 has been opened
-Channel #14 has been closed with exit status 0
-Execute a command (expr 4692 + `cat /tmp/data-2356` > /tmp/data-3386) with options ([:])
-Channel #15 has been opened
-Channel #15 has been closed with exit status 0
-Execute a command (cat /tmp/data-2356 && rm /tmp/data-2356) with options ([:])
-Channel #16 has been opened
-6793
-Channel #16 has been closed with exit status 0
-Execute a command (cat /tmp/data-3386 && rm /tmp/data-3386) with options ([:])
-Channel #17 has been opened
-11485
-Channel #17 has been closed with exit status 0
-:executeSequentially (Thread[main,5,main]) completed. Took 0.921 secs.
-:executeShell (Thread[main,5,main]) started.
-:executeShell
-Executing task ':executeShell' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a shell with options ([:])
-Channel #18 has been opened
-Last login: Sun Feb 16 13:51:46 2014 from localhost.localdomain
+:executeConcurrently FAILED
+:executeConcurrently (Thread[main,5,main]) completed. Took 4.395 secs.
 
-travis@testing-worker-linux-3-2-23701-linux-1-18978254:~$ 
-exit 0
+FAILURE: Build failed with an exception.
 
-logout
-Channel #18 has been closed with exit status 0
-:executeShell (Thread[main,5,main]) completed. Took 0.88 secs.
-:failureStatus (Thread[main,5,main]) started.
-:failureStatus
-Executing task ':failureStatus' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (exit 1) with options ([:])
-Channel #19 has been opened
-Channel #19 has been closed with exit status 1
-:failureStatus (Thread[main,5,main]) completed. Took 0.325 secs.
-:failureStatusInBackground (Thread[main,5,main]) started.
-:failureStatusInBackground
-Executing task ':failureStatusInBackground' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (exit 1) in background
-Channel #20 has been opened
-Channel #20 has been closed with exit status 1
-:failureStatusInBackground (Thread[main,5,main]) completed. Took 0.308 secs.
-:setupBuildDir (Thread[main,5,main]) started.
-:setupBuildDir
-Executing task ':setupBuildDir' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-:setupBuildDir (Thread[main,5,main]) completed. Took 0.006 secs.
-:putAndGetFiles (Thread[main,5,main]) started.
-:putAndGetFiles
-Executing task ':putAndGetFiles' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/local-2578) to remote (/tmp/data-1996)
-Channel #21 has been opened
-Channel #21 has been closed with exit status -1
-Put a local file (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/local-361) to remote (/tmp/data-4064)
-Channel #22 has been opened
-Channel #22 has been closed with exit status -1
-Execute a command (expr `cat /tmp/data-1996` + `cat /tmp/data-4064` > /tmp/data-6206) with options ([:])
-Channel #23 has been opened
-Channel #23 has been closed with exit status 0
-Execute a command (expr `cat /tmp/data-1996` - `cat /tmp/data-4064` > /tmp/data-9875) with options ([:])
-Channel #24 has been opened
-Channel #24 has been closed with exit status 0
-Get a remote file (/tmp/data-6206) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/local-7399)
-Channel #25 has been opened
-Channel #25 has been closed with exit status -1
-Get a remote file (/tmp/data-9875) to local (/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/build/local-1720)
-Channel #26 has been opened
-Channel #26 has been closed with exit status -1
-Execute a command (rm -v /tmp/data-1996 /tmp/data-4064 /tmp/data-6206 /tmp/data-9875) with options ([:])
-Channel #27 has been opened
-removed `/tmp/data-1996'
-removed `/tmp/data-4064'
-removed `/tmp/data-6206'
-removed `/tmp/data-9875'
-Channel #27 has been closed with exit status 0
-:putAndGetFiles (Thread[main,5,main]) completed. Took 0.823 secs.
-:testEnvironmentOfCommand (Thread[main,5,main]) started.
-:testEnvironmentOfCommand
-Executing task ':testEnvironmentOfCommand' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (export testdata=dummy) with options ([:])
-Channel #28 has been opened
-Channel #28 has been closed with exit status 0
-Execute a command (echo "testdata is $testdata") with options ([:])
-Channel #29 has been opened
-testdata is 
-Channel #29 has been closed with exit status 0
-:testEnvironmentOfCommand (Thread[main,5,main]) completed. Took 0.501 secs.
-:test (Thread[main,5,main]) started.
-:test
-Skipping task ':test' as it has no actions.
-:test (Thread[main,5,main]) completed. Took 0.002 secs.
-:createUserForSudoNoPassword (Thread[main,5,main]) started.
-:createUserForSudoNoPassword
-Executing task ':createUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (sudo useradd -m user973n) with options ([:])
-Channel #30 has been opened
-Channel #30 has been closed with exit status 0
-Execute a command (sudo passwd user973n) with options ([:])
-Channel #31 has been opened
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-Channel #31 has been closed with exit status 0
-Execute a command (echo 'user973n ALL=(ALL) NOPASSWD: ALL' > /tmp/user973n) with options ([:])
-Channel #32 has been opened
-Channel #32 has been closed with exit status 0
-Execute a command (sudo chmod 440 /tmp/user973n) with options ([:])
-Channel #33 has been opened
-Channel #33 has been closed with exit status 0
-Execute a command (sudo chown 0.0 /tmp/user973n) with options ([:])
-Channel #34 has been opened
-Channel #34 has been closed with exit status 0
-Execute a command (sudo mv /tmp/user973n /etc/sudoers.d) with options ([:])
-Channel #35 has been opened
-Channel #35 has been closed with exit status 0
-:createUserForSudoNoPassword (Thread[main,5,main]) completed. Took 1.33 secs.
-:executeSudoNoPassword (Thread[main,5,main]) started.
-:executeSudoNoPassword
-Executing task ':executeSudoNoPassword' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (whoami) with sudo support and options ([pty:true])
-Execute a command (sudo -S -p 'eaba2a25-4c0d-4223-b5eb-f2f5b5615575' whoami) with options ([pty:true])
-Channel #36 has been opened
-root
-Channel #36 has been closed with exit status 0
-:executeSudoNoPassword (Thread[main,5,main]) completed. Took 0.305 secs.
-:deleteUserForSudoNoPassword (Thread[main,5,main]) started.
-:deleteUserForSudoNoPassword
-Executing task ':deleteUserForSudoNoPassword' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (sudo rm -v /etc/sudoers.d/user973n) with options ([:])
-Channel #37 has been opened
-removed `/etc/sudoers.d/user973n'
-Channel #37 has been closed with exit status 0
-Execute a command (sudo userdel -r user973n) with options ([:])
-Channel #38 has been opened
-Channel #38 has been closed with exit status 0
-:deleteUserForSudoNoPassword (Thread[main,5,main]) completed. Took 0.514 secs.
-:createUserForSudoWithPassword (Thread[main,5,main]) started.
-:createUserForSudoWithPassword
-Executing task ':createUserForSudoWithPassword' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (sudo useradd -m user7848p) with options ([:])
-Channel #39 has been opened
-Channel #39 has been closed with exit status 0
-Execute a command (sudo passwd user7848p) with options ([:])
-Channel #40 has been opened
-Enter new UNIX password: 
-Retype new UNIX password: 
-passwd: password updated successfully
-Channel #40 has been closed with exit status 0
-Execute a command (echo 'user7848p ALL=(ALL) ALL' > /tmp/user7848p) with options ([:])
-Channel #41 has been opened
-Channel #41 has been closed with exit status 0
-Execute a command (sudo chmod 440 /tmp/user7848p) with options ([:])
-Channel #42 has been opened
-Channel #42 has been closed with exit status 0
-Execute a command (sudo chown 0.0 /tmp/user7848p) with options ([:])
-Channel #43 has been opened
-Channel #43 has been closed with exit status 0
-Execute a command (sudo mv /tmp/user7848p /etc/sudoers.d) with options ([:])
-Channel #44 has been opened
-Channel #44 has been closed with exit status 0
-:createUserForSudoWithPassword (Thread[main,5,main]) completed. Took 1.324 secs.
-:executeSudoWithPassword (Thread[main,5,main]) started.
-:executeSudoWithPassword
-Executing task ':executeSudoWithPassword' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (whoami) with sudo support and options ([pty:true])
-Execute a command (sudo -S -p '529dd074-fb91-419d-ab7e-7bb5b2a075b0' whoami) with options ([pty:true])
-Channel #45 has been opened
-Sending password for sudo authentication on channel #45
-529dd074-fb91-419d-ab7e-7bb5b2a075b0
+* Where:
+Script '/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle' line: 147
 
-root
-Channel #45 has been closed with exit status 0
-:executeSudoWithPassword (Thread[main,5,main]) completed. Took 0.272 secs.
-:deleteUserForSudoWithPassword (Thread[main,5,main]) started.
-:deleteUserForSudoWithPassword
-Executing task ':deleteUserForSudoWithPassword' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (sudo rm -v /etc/sudoers.d/user7848p) with options ([:])
-Channel #46 has been opened
-removed `/etc/sudoers.d/user7848p'
-Channel #46 has been closed with exit status 0
-Execute a command (sudo userdel -r user7848p) with options ([:])
-Channel #47 has been opened
-Channel #47 has been closed with exit status 0
-:deleteUserForSudoWithPassword (Thread[main,5,main]) completed. Took 0.504 secs.
-:createUserWithAuthorizedKey (Thread[main,5,main]) started.
-:createUserWithAuthorizedKey
-Executing task ':createUserWithAuthorizedKey' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (sudo useradd -m user1860n) with options ([:])
-Channel #48 has been opened
-Channel #48 has been closed with exit status 0
-Execute a command (sudo -u user1860n mkdir ~user1860n/.ssh) with options ([:])
-Channel #49 has been opened
-Channel #49 has been closed with exit status 0
-Execute a command (sudo -u user1860n tee ~user1860n/.ssh/authorized_keys < ~/.ssh/id_rsa_pass.pub) with options ([:])
-Channel #50 has been opened
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrTsiXZ9Z2UJYRSXXFL70+fzyPFprNScu5r+miiF037fZ6aAvwoYKlXxluuZ2ZVHPS8DqMuLsvURLigJKH0BIw+UAMatxjGVofgaGw3ZvY8oL6sPPcus368K/zIVSQkyyH8/GrzVFiZzJ+3JqVtIrpL51lfm0wgk8aziJQKuDUqhltbkTY33RcN5i6lnK++AQQOk9020DzcvNFg1r4+R9FkANbEcsKPBnwwTOW1x8VONULBWvHMo3oLArIcGzX0YTW5vunIn8xfmvEjHI7V7Tubimd8ZOU5SOZpnscJ7/ein1zdIDitghMsUTcog0OJGq0KH+eeEAk2tQjgwQCnQc9 
-Channel #50 has been closed with exit status 0
-:createUserWithAuthorizedKey (Thread[main,5,main]) completed. Took 0.706 secs.
-:useRemoteSpecificIdentity (Thread[main,5,main]) started.
-:useRemoteSpecificIdentity
-Executing task ':useRemoteSpecificIdentity' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (whoami) with options ([:])
-Channel #51 has been opened
-user1860n
-Channel #51 has been closed with exit status 0
-:useRemoteSpecificIdentity (Thread[main,5,main]) completed. Took 0.303 secs.
-:deleteUserWithAuthorizedKey (Thread[main,5,main]) started.
-:deleteUserWithAuthorizedKey
-Executing task ':deleteUserWithAuthorizedKey' (up-to-date check took 0.0 secs) due to:
-  Task has not declared any outputs.
-Execute a command (sudo userdel -r user1860n) with options ([:])
-Channel #52 has been opened
-Channel #52 has been closed with exit status 0
-:deleteUserWithAuthorizedKey (Thread[main,5,main]) completed. Took 0.293 secs.
-:aggressiveTest (Thread[main,5,main]) started.
-:aggressiveTest
-Skipping task ':aggressiveTest' as it has no actions.
-:aggressiveTest (Thread[main,5,main]) completed. Took 0.002 secs.
+* What went wrong:
+Execution failed for task ':executeConcurrently'.
+> Assertion failed: 
+  
+  assert Math.abs((timeA as int) - (timeD as int)) == 3
+              |    |             |  |              |
+              2    1392640297    2  1392640295     false
 
-BUILD SUCCESSFUL
 
-Total time: 28.127 secs
+* Try:
+Run with --debug option to get more log output.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':executeConcurrently'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:69)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.PostExecutionAnalysisTaskExecuter.execute(PostExecutionAnalysisTaskExecuter.java:35)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:64)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:42)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:52)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:53)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.AbstractTask.executeWithoutThrowingTaskFailure(AbstractTask.java:289)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.executeTask(AbstractTaskPlanExecutor.java:79)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:63)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:51)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor$1.run(DefaultTaskPlanExecutor.java:33)
+	at org.gradle.internal.Factories$1.create(Factories.java:22)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:198)
+	at org.gradle.cache.internal.DefaultCacheAccess.longRunningOperation(DefaultCacheAccess.java:266)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.longRunningOperation(DefaultPersistentDirectoryStore.java:135)
+	at org.gradle.api.internal.changedetection.state.DefaultTaskArtifactStateCacheAccess.longRunningOperation(DefaultTaskArtifactStateCacheAccess.java:95)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:31)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:86)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:29)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.access$200(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$2.proceed(DefaultBuildExecuter.java:67)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:61)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:54)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:166)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:113)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:81)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter$DefaultBuildController.run(InProcessBuildActionExecuter.java:64)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:33)
+	at org.gradle.launcher.cli.ExecuteBuildAction.run(ExecuteBuildAction.java:24)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:50)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:171)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:201)
+	at org.gradle.launcher.cli.CommandLineActionFactory$ParseAndBuildAction.execute(CommandLineActionFactory.java:174)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:170)
+	at org.gradle.launcher.cli.CommandLineActionFactory$WithLogging.execute(CommandLineActionFactory.java:139)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:33)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:22)
+	at org.gradle.launcher.Main.doAction(Main.java:46)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:45)
+	at org.gradle.launcher.Main.main(Main.java:37)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:50)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:32)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:23)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:127)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:58)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: Assertion failed: 
+
+assert Math.abs((timeA as int) - (timeD as int)) == 3
+            |    |             |  |              |
+            2    1392640297    2  1392640295     false
+
+	at org.gradle.api.internal.AbstractTask$ClosureTaskAction.execute(AbstractTask.java:502)
+	at org.gradle.api.internal.AbstractTask$ClosureTaskAction.execute(AbstractTask.java:483)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:80)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:61)
+	... 52 more
+Caused by: Assertion failed: 
+
+assert Math.abs((timeA as int) - (timeD as int)) == 3
+            |    |             |  |              |
+            2    1392640297    2  1392640295     false
+
+	at features_2dnetaj9mji46geq4bf5iho8f$_run_closure14_closure56.doCall(/home/travis/build/int128/gradle-ssh-plugin/acceptance-test/features.gradle:147)
+	... 56 more
+
+
+BUILD FAILED
+
+Total time: 20.778 secs
