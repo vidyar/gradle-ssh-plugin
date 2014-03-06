@@ -6,7 +6,7 @@ install:
   
 
 script:
- - sleep 700
+  - sleep 700
   - ./gradlew check
   - ./.travis.sh acceptance_test
 after_script:
