@@ -3,10 +3,13 @@ jdk: oraclejdk7
 
 install:
   - ./gradlew uploadArchives
+  
 
 script:
+ - sleep 700
   - ./gradlew check
   - ./.travis.sh acceptance_test
 after_script:
   - ./.travis.sh publish_report
+  
 
