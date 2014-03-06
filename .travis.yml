@@ -1,7 +1,9 @@
 language: java
 jdk: oraclejdk7
+
 install:
   - ./gradlew uploadArchives
+
 script:
   - ./gradlew check
   - ./.travis.sh acceptance_test
